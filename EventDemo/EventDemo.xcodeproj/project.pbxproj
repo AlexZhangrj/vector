@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08CE77C21CF1D3EB00FEB0F7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CE77C11CF1D3EB00FEB0F7 /* main.swift */; };
+		08CE77D11CF1D42700FEB0F7 /* Event.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77D01CF1D42700FEB0F7 /* Event.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE77D81CF1D45000FEB0F7 /* QLEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77D61CF1D45000FEB0F7 /* QLEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE77D91CF1D45000FEB0F7 /* QLEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CE77D71CF1D45000FEB0F7 /* QLEvent.m */; };
+		08CE77DA1CF1D45F00FEB0F7 /* Event.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE77CE1CF1D42700FEB0F7 /* Event.framework */; };
+		08CE78181CF35BE500FEB0F7 /* evdns.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F31CF35BE500FEB0F7 /* evdns.h */; };
+		08CE78191CF35BE500FEB0F7 /* event.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F41CF35BE500FEB0F7 /* event.h */; };
+		08CE781A1CF35BE500FEB0F7 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F61CF35BE500FEB0F7 /* buffer.h */; };
+		08CE781B1CF35BE500FEB0F7 /* buffer_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F71CF35BE500FEB0F7 /* buffer_compat.h */; };
+		08CE781C1CF35BE500FEB0F7 /* bufferevent.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F81CF35BE500FEB0F7 /* bufferevent.h */; };
+		08CE781D1CF35BE500FEB0F7 /* bufferevent_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F91CF35BE500FEB0F7 /* bufferevent_compat.h */; };
+		08CE781E1CF35BE500FEB0F7 /* bufferevent_ssl.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77FA1CF35BE500FEB0F7 /* bufferevent_ssl.h */; };
+		08CE781F1CF35BE500FEB0F7 /* bufferevent_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77FB1CF35BE500FEB0F7 /* bufferevent_struct.h */; };
+		08CE78201CF35BE500FEB0F7 /* dns.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77FC1CF35BE500FEB0F7 /* dns.h */; };
+		08CE78211CF35BE500FEB0F7 /* dns_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77FD1CF35BE500FEB0F7 /* dns_compat.h */; };
+		08CE78221CF35BE500FEB0F7 /* dns_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77FE1CF35BE500FEB0F7 /* dns_struct.h */; };
+		08CE78231CF35BE500FEB0F7 /* event-config.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77FF1CF35BE500FEB0F7 /* event-config.h */; };
+		08CE78241CF35BE600FEB0F7 /* event.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78001CF35BE500FEB0F7 /* event.h */; };
+		08CE78251CF35BE600FEB0F7 /* event_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78011CF35BE500FEB0F7 /* event_compat.h */; };
+		08CE78261CF35BE600FEB0F7 /* event_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78021CF35BE500FEB0F7 /* event_struct.h */; };
+		08CE78271CF35BE600FEB0F7 /* http.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78031CF35BE500FEB0F7 /* http.h */; };
+		08CE78281CF35BE600FEB0F7 /* http_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78041CF35BE500FEB0F7 /* http_compat.h */; };
+		08CE78291CF35BE600FEB0F7 /* http_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78051CF35BE500FEB0F7 /* http_struct.h */; };
+		08CE782A1CF35BE600FEB0F7 /* keyvalq_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78061CF35BE500FEB0F7 /* keyvalq_struct.h */; };
+		08CE782B1CF35BE600FEB0F7 /* listener.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78071CF35BE500FEB0F7 /* listener.h */; };
+		08CE782C1CF35BE600FEB0F7 /* rpc.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78081CF35BE500FEB0F7 /* rpc.h */; };
+		08CE782D1CF35BE600FEB0F7 /* rpc_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78091CF35BE500FEB0F7 /* rpc_compat.h */; };
+		08CE782E1CF35BE600FEB0F7 /* rpc_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE780A1CF35BE500FEB0F7 /* rpc_struct.h */; };
+		08CE782F1CF35BE600FEB0F7 /* tag.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE780B1CF35BE500FEB0F7 /* tag.h */; };
+		08CE78301CF35BE600FEB0F7 /* tag_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE780C1CF35BE500FEB0F7 /* tag_compat.h */; };
+		08CE78311CF35BE600FEB0F7 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE780D1CF35BE500FEB0F7 /* thread.h */; };
+		08CE78321CF35BE600FEB0F7 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE780E1CF35BE500FEB0F7 /* util.h */; };
+		08CE78331CF35BE600FEB0F7 /* evhttp.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE780F1CF35BE500FEB0F7 /* evhttp.h */; };
+		08CE78341CF35BE600FEB0F7 /* evrpc.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78101CF35BE500FEB0F7 /* evrpc.h */; };
+		08CE78351CF35BE600FEB0F7 /* evutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78111CF35BE500FEB0F7 /* evutil.h */; };
+		08CE78361CF35BE600FEB0F7 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE78131CF35BE500FEB0F7 /* libevent.a */; };
+		08CE78371CF35BE600FEB0F7 /* libevent_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE78141CF35BE500FEB0F7 /* libevent_core.a */; };
+		08CE78381CF35BE600FEB0F7 /* libevent_extra.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE78151CF35BE500FEB0F7 /* libevent_extra.a */; };
+		08CE78391CF35BE600FEB0F7 /* libevent_openssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE78161CF35BE500FEB0F7 /* libevent_openssl.a */; };
+		08CE783A1CF35BE600FEB0F7 /* libevent_pthreads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE78171CF35BE500FEB0F7 /* libevent_pthreads.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		08CE77BC1CF1D3EB00FEB0F7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08CE77BE1CF1D3EB00FEB0F7 /* EventDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EventDemo; sourceTree = BUILT_PRODUCTS_DIR; };
+		08CE77C11CF1D3EB00FEB0F7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		08CE77CE1CF1D42700FEB0F7 /* Event.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Event.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08CE77D01CF1D42700FEB0F7 /* Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		08CE77D21CF1D42700FEB0F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08CE77D61CF1D45000FEB0F7 /* QLEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLEvent.h; sourceTree = "<group>"; };
+		08CE77D71CF1D45000FEB0F7 /* QLEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLEvent.m; sourceTree = "<group>"; };
+		08CE77F31CF35BE500FEB0F7 /* evdns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evdns.h; sourceTree = "<group>"; };
+		08CE77F41CF35BE500FEB0F7 /* event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = event.h; sourceTree = "<group>"; };
+		08CE77F61CF35BE500FEB0F7 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		08CE77F71CF35BE500FEB0F7 /* buffer_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer_compat.h; sourceTree = "<group>"; };
+		08CE77F81CF35BE500FEB0F7 /* bufferevent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bufferevent.h; sourceTree = "<group>"; };
+		08CE77F91CF35BE500FEB0F7 /* bufferevent_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bufferevent_compat.h; sourceTree = "<group>"; };
+		08CE77FA1CF35BE500FEB0F7 /* bufferevent_ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bufferevent_ssl.h; sourceTree = "<group>"; };
+		08CE77FB1CF35BE500FEB0F7 /* bufferevent_struct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bufferevent_struct.h; sourceTree = "<group>"; };
+		08CE77FC1CF35BE500FEB0F7 /* dns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dns.h; sourceTree = "<group>"; };
+		08CE77FD1CF35BE500FEB0F7 /* dns_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dns_compat.h; sourceTree = "<group>"; };
+		08CE77FE1CF35BE500FEB0F7 /* dns_struct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dns_struct.h; sourceTree = "<group>"; };
+		08CE77FF1CF35BE500FEB0F7 /* event-config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "event-config.h"; sourceTree = "<group>"; };
+		08CE78001CF35BE500FEB0F7 /* event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = event.h; sourceTree = "<group>"; };
+		08CE78011CF35BE500FEB0F7 /* event_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = event_compat.h; sourceTree = "<group>"; };
+		08CE78021CF35BE500FEB0F7 /* event_struct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = event_struct.h; sourceTree = "<group>"; };
+		08CE78031CF35BE500FEB0F7 /* http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http.h; sourceTree = "<group>"; };
+		08CE78041CF35BE500FEB0F7 /* http_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http_compat.h; sourceTree = "<group>"; };
+		08CE78051CF35BE500FEB0F7 /* http_struct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http_struct.h; sourceTree = "<group>"; };
+		08CE78061CF35BE500FEB0F7 /* keyvalq_struct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyvalq_struct.h; sourceTree = "<group>"; };
+		08CE78071CF35BE500FEB0F7 /* listener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listener.h; sourceTree = "<group>"; };
+		08CE78081CF35BE500FEB0F7 /* rpc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rpc.h; sourceTree = "<group>"; };
+		08CE78091CF35BE500FEB0F7 /* rpc_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rpc_compat.h; sourceTree = "<group>"; };
+		08CE780A1CF35BE500FEB0F7 /* rpc_struct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rpc_struct.h; sourceTree = "<group>"; };
+		08CE780B1CF35BE500FEB0F7 /* tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tag.h; sourceTree = "<group>"; };
+		08CE780C1CF35BE500FEB0F7 /* tag_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tag_compat.h; sourceTree = "<group>"; };
+		08CE780D1CF35BE500FEB0F7 /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		08CE780E1CF35BE500FEB0F7 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		08CE780F1CF35BE500FEB0F7 /* evhttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evhttp.h; sourceTree = "<group>"; };
+		08CE78101CF35BE500FEB0F7 /* evrpc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evrpc.h; sourceTree = "<group>"; };
+		08CE78111CF35BE500FEB0F7 /* evutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evutil.h; sourceTree = "<group>"; };
+		08CE78131CF35BE500FEB0F7 /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent.a; sourceTree = "<group>"; };
+		08CE78141CF35BE500FEB0F7 /* libevent_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent_core.a; sourceTree = "<group>"; };
+		08CE78151CF35BE500FEB0F7 /* libevent_extra.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent_extra.a; sourceTree = "<group>"; };
+		08CE78161CF35BE500FEB0F7 /* libevent_openssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent_openssl.a; sourceTree = "<group>"; };
+		08CE78171CF35BE500FEB0F7 /* libevent_pthreads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent_pthreads.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08CE77BB1CF1D3EB00FEB0F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CE77DA1CF1D45F00FEB0F7 /* Event.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08CE77CA1CF1D42700FEB0F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CE78381CF35BE600FEB0F7 /* libevent_extra.a in Frameworks */,
+				08CE78391CF35BE600FEB0F7 /* libevent_openssl.a in Frameworks */,
+				08CE78361CF35BE600FEB0F7 /* libevent.a in Frameworks */,
+				08CE783A1CF35BE600FEB0F7 /* libevent_pthreads.a in Frameworks */,
+				08CE78371CF35BE600FEB0F7 /* libevent_core.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08CE77B51CF1D3EB00FEB0F7 = {
+			isa = PBXGroup;
+			children = (
+				08CE77F01CF35BE500FEB0F7 /* lib */,
+				08CE77C81CF1D3FE00FEB0F7 /* Event */,
+				08CE77C01CF1D3EB00FEB0F7 /* EventDemo */,
+				08CE77CF1CF1D42700FEB0F7 /* Event */,
+				08CE77BF1CF1D3EB00FEB0F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08CE77BF1CF1D3EB00FEB0F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08CE77BE1CF1D3EB00FEB0F7 /* EventDemo */,
+				08CE77CE1CF1D42700FEB0F7 /* Event.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08CE77C01CF1D3EB00FEB0F7 /* EventDemo */ = {
+			isa = PBXGroup;
+			children = (
+				08CE77C11CF1D3EB00FEB0F7 /* main.swift */,
+			);
+			path = EventDemo;
+			sourceTree = "<group>";
+		};
+		08CE77C81CF1D3FE00FEB0F7 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				08CE77D61CF1D45000FEB0F7 /* QLEvent.h */,
+				08CE77D71CF1D45000FEB0F7 /* QLEvent.m */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		08CE77CF1CF1D42700FEB0F7 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				08CE77D01CF1D42700FEB0F7 /* Event.h */,
+				08CE77D21CF1D42700FEB0F7 /* Info.plist */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		08CE77F01CF35BE500FEB0F7 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				08CE77F11CF35BE500FEB0F7 /* event */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		08CE77F11CF35BE500FEB0F7 /* event */ = {
+			isa = PBXGroup;
+			children = (
+				08CE77F21CF35BE500FEB0F7 /* include */,
+				08CE78121CF35BE500FEB0F7 /* lib */,
+			);
+			path = event;
+			sourceTree = "<group>";
+		};
+		08CE77F21CF35BE500FEB0F7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				08CE77F31CF35BE500FEB0F7 /* evdns.h */,
+				08CE77F41CF35BE500FEB0F7 /* event.h */,
+				08CE77F51CF35BE500FEB0F7 /* event2 */,
+				08CE780F1CF35BE500FEB0F7 /* evhttp.h */,
+				08CE78101CF35BE500FEB0F7 /* evrpc.h */,
+				08CE78111CF35BE500FEB0F7 /* evutil.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		08CE77F51CF35BE500FEB0F7 /* event2 */ = {
+			isa = PBXGroup;
+			children = (
+				08CE77F61CF35BE500FEB0F7 /* buffer.h */,
+				08CE77F71CF35BE500FEB0F7 /* buffer_compat.h */,
+				08CE77F81CF35BE500FEB0F7 /* bufferevent.h */,
+				08CE77F91CF35BE500FEB0F7 /* bufferevent_compat.h */,
+				08CE77FA1CF35BE500FEB0F7 /* bufferevent_ssl.h */,
+				08CE77FB1CF35BE500FEB0F7 /* bufferevent_struct.h */,
+				08CE77FC1CF35BE500FEB0F7 /* dns.h */,
+				08CE77FD1CF35BE500FEB0F7 /* dns_compat.h */,
+				08CE77FE1CF35BE500FEB0F7 /* dns_struct.h */,
+				08CE77FF1CF35BE500FEB0F7 /* event-config.h */,
+				08CE78001CF35BE500FEB0F7 /* event.h */,
+				08CE78011CF35BE500FEB0F7 /* event_compat.h */,
+				08CE78021CF35BE500FEB0F7 /* event_struct.h */,
+				08CE78031CF35BE500FEB0F7 /* http.h */,
+				08CE78041CF35BE500FEB0F7 /* http_compat.h */,
+				08CE78051CF35BE500FEB0F7 /* http_struct.h */,
+				08CE78061CF35BE500FEB0F7 /* keyvalq_struct.h */,
+				08CE78071CF35BE500FEB0F7 /* listener.h */,
+				08CE78081CF35BE500FEB0F7 /* rpc.h */,
+				08CE78091CF35BE500FEB0F7 /* rpc_compat.h */,
+				08CE780A1CF35BE500FEB0F7 /* rpc_struct.h */,
+				08CE780B1CF35BE500FEB0F7 /* tag.h */,
+				08CE780C1CF35BE500FEB0F7 /* tag_compat.h */,
+				08CE780D1CF35BE500FEB0F7 /* thread.h */,
+				08CE780E1CF35BE500FEB0F7 /* util.h */,
+			);
+			path = event2;
+			sourceTree = "<group>";
+		};
+		08CE78121CF35BE500FEB0F7 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				08CE78131CF35BE500FEB0F7 /* libevent.a */,
+				08CE78141CF35BE500FEB0F7 /* libevent_core.a */,
+				08CE78151CF35BE500FEB0F7 /* libevent_extra.a */,
+				08CE78161CF35BE500FEB0F7 /* libevent_openssl.a */,
+				08CE78171CF35BE500FEB0F7 /* libevent_pthreads.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		08CE77CB1CF1D42700FEB0F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CE78271CF35BE600FEB0F7 /* http.h in Headers */,
+				08CE78201CF35BE500FEB0F7 /* dns.h in Headers */,
+				08CE782D1CF35BE600FEB0F7 /* rpc_compat.h in Headers */,
+				08CE78181CF35BE500FEB0F7 /* evdns.h in Headers */,
+				08CE782E1CF35BE600FEB0F7 /* rpc_struct.h in Headers */,
+				08CE781D1CF35BE500FEB0F7 /* bufferevent_compat.h in Headers */,
+				08CE781E1CF35BE500FEB0F7 /* bufferevent_ssl.h in Headers */,
+				08CE78331CF35BE600FEB0F7 /* evhttp.h in Headers */,
+				08CE77D81CF1D45000FEB0F7 /* QLEvent.h in Headers */,
+				08CE782B1CF35BE600FEB0F7 /* listener.h in Headers */,
+				08CE781B1CF35BE500FEB0F7 /* buffer_compat.h in Headers */,
+				08CE78221CF35BE500FEB0F7 /* dns_struct.h in Headers */,
+				08CE782A1CF35BE600FEB0F7 /* keyvalq_struct.h in Headers */,
+				08CE78301CF35BE600FEB0F7 /* tag_compat.h in Headers */,
+				08CE77D11CF1D42700FEB0F7 /* Event.h in Headers */,
+				08CE78261CF35BE600FEB0F7 /* event_struct.h in Headers */,
+				08CE78281CF35BE600FEB0F7 /* http_compat.h in Headers */,
+				08CE78291CF35BE600FEB0F7 /* http_struct.h in Headers */,
+				08CE781F1CF35BE500FEB0F7 /* bufferevent_struct.h in Headers */,
+				08CE78251CF35BE600FEB0F7 /* event_compat.h in Headers */,
+				08CE78241CF35BE600FEB0F7 /* event.h in Headers */,
+				08CE782F1CF35BE600FEB0F7 /* tag.h in Headers */,
+				08CE781A1CF35BE500FEB0F7 /* buffer.h in Headers */,
+				08CE78351CF35BE600FEB0F7 /* evutil.h in Headers */,
+				08CE78311CF35BE600FEB0F7 /* thread.h in Headers */,
+				08CE78191CF35BE500FEB0F7 /* event.h in Headers */,
+				08CE78211CF35BE500FEB0F7 /* dns_compat.h in Headers */,
+				08CE782C1CF35BE600FEB0F7 /* rpc.h in Headers */,
+				08CE78341CF35BE600FEB0F7 /* evrpc.h in Headers */,
+				08CE781C1CF35BE500FEB0F7 /* bufferevent.h in Headers */,
+				08CE78321CF35BE600FEB0F7 /* util.h in Headers */,
+				08CE78231CF35BE500FEB0F7 /* event-config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		08CE77BD1CF1D3EB00FEB0F7 /* EventDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08CE77C51CF1D3EB00FEB0F7 /* Build configuration list for PBXNativeTarget "EventDemo" */;
+			buildPhases = (
+				08CE77BA1CF1D3EB00FEB0F7 /* Sources */,
+				08CE77BB1CF1D3EB00FEB0F7 /* Frameworks */,
+				08CE77BC1CF1D3EB00FEB0F7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EventDemo;
+			productName = EventDemo;
+			productReference = 08CE77BE1CF1D3EB00FEB0F7 /* EventDemo */;
+			productType = "com.apple.product-type.tool";
+		};
+		08CE77CD1CF1D42700FEB0F7 /* Event */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08CE77D31CF1D42700FEB0F7 /* Build configuration list for PBXNativeTarget "Event" */;
+			buildPhases = (
+				08CE77C91CF1D42700FEB0F7 /* Sources */,
+				08CE77CA1CF1D42700FEB0F7 /* Frameworks */,
+				08CE77CB1CF1D42700FEB0F7 /* Headers */,
+				08CE77CC1CF1D42700FEB0F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Event;
+			productName = Event;
+			productReference = 08CE77CE1CF1D42700FEB0F7 /* Event.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08CE77B61CF1D3EB00FEB0F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "王青海";
+				TargetAttributes = {
+					08CE77BD1CF1D3EB00FEB0F7 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					08CE77CD1CF1D42700FEB0F7 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 08CE77B91CF1D3EB00FEB0F7 /* Build configuration list for PBXProject "EventDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08CE77B51CF1D3EB00FEB0F7;
+			productRefGroup = 08CE77BF1CF1D3EB00FEB0F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08CE77BD1CF1D3EB00FEB0F7 /* EventDemo */,
+				08CE77CD1CF1D42700FEB0F7 /* Event */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08CE77CC1CF1D42700FEB0F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08CE77BA1CF1D3EB00FEB0F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CE77C21CF1D3EB00FEB0F7 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08CE77C91CF1D42700FEB0F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CE77D91CF1D45000FEB0F7 /* QLEvent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		08CE77C31CF1D3EB00FEB0F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08CE77C41CF1D3EB00FEB0F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		08CE77C61CF1D3EB00FEB0F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		08CE77C71CF1D3EB00FEB0F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		08CE77D41CF1D42700FEB0F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/lib/event/include";
+				INFOPLIST_FILE = Event/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib/event/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuanqing.-.Event";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		08CE77D51CF1D42700FEB0F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/lib/event/include";
+				INFOPLIST_FILE = Event/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib/event/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuanqing.-.Event";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08CE77B91CF1D3EB00FEB0F7 /* Build configuration list for PBXProject "EventDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08CE77C31CF1D3EB00FEB0F7 /* Debug */,
+				08CE77C41CF1D3EB00FEB0F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08CE77C51CF1D3EB00FEB0F7 /* Build configuration list for PBXNativeTarget "EventDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08CE77C61CF1D3EB00FEB0F7 /* Debug */,
+				08CE77C71CF1D3EB00FEB0F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		08CE77D31CF1D42700FEB0F7 /* Build configuration list for PBXNativeTarget "Event" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08CE77D41CF1D42700FEB0F7 /* Debug */,
+				08CE77D51CF1D42700FEB0F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08CE77B61CF1D3EB00FEB0F7 /* Project object */;
+}
