@@ -11,42 +11,43 @@
 		08CE77D11CF1D42700FEB0F7 /* Event.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77D01CF1D42700FEB0F7 /* Event.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08CE77D81CF1D45000FEB0F7 /* QLEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77D61CF1D45000FEB0F7 /* QLEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08CE77D91CF1D45000FEB0F7 /* QLEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CE77D71CF1D45000FEB0F7 /* QLEvent.m */; };
-		08CE77DA1CF1D45F00FEB0F7 /* Event.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE77CE1CF1D42700FEB0F7 /* Event.framework */; };
-		08CE78181CF35BE500FEB0F7 /* evdns.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F31CF35BE500FEB0F7 /* evdns.h */; };
-		08CE78191CF35BE500FEB0F7 /* event.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F41CF35BE500FEB0F7 /* event.h */; };
-		08CE781A1CF35BE500FEB0F7 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F61CF35BE500FEB0F7 /* buffer.h */; };
-		08CE781B1CF35BE500FEB0F7 /* buffer_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F71CF35BE500FEB0F7 /* buffer_compat.h */; };
-		08CE781C1CF35BE500FEB0F7 /* bufferevent.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F81CF35BE500FEB0F7 /* bufferevent.h */; };
-		08CE781D1CF35BE500FEB0F7 /* bufferevent_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F91CF35BE500FEB0F7 /* bufferevent_compat.h */; };
-		08CE781E1CF35BE500FEB0F7 /* bufferevent_ssl.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77FA1CF35BE500FEB0F7 /* bufferevent_ssl.h */; };
-		08CE781F1CF35BE500FEB0F7 /* bufferevent_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77FB1CF35BE500FEB0F7 /* bufferevent_struct.h */; };
-		08CE78201CF35BE500FEB0F7 /* dns.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77FC1CF35BE500FEB0F7 /* dns.h */; };
-		08CE78211CF35BE500FEB0F7 /* dns_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77FD1CF35BE500FEB0F7 /* dns_compat.h */; };
-		08CE78221CF35BE500FEB0F7 /* dns_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77FE1CF35BE500FEB0F7 /* dns_struct.h */; };
-		08CE78231CF35BE500FEB0F7 /* event-config.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77FF1CF35BE500FEB0F7 /* event-config.h */; };
-		08CE78241CF35BE600FEB0F7 /* event.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78001CF35BE500FEB0F7 /* event.h */; };
-		08CE78251CF35BE600FEB0F7 /* event_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78011CF35BE500FEB0F7 /* event_compat.h */; };
-		08CE78261CF35BE600FEB0F7 /* event_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78021CF35BE500FEB0F7 /* event_struct.h */; };
-		08CE78271CF35BE600FEB0F7 /* http.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78031CF35BE500FEB0F7 /* http.h */; };
-		08CE78281CF35BE600FEB0F7 /* http_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78041CF35BE500FEB0F7 /* http_compat.h */; };
-		08CE78291CF35BE600FEB0F7 /* http_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78051CF35BE500FEB0F7 /* http_struct.h */; };
-		08CE782A1CF35BE600FEB0F7 /* keyvalq_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78061CF35BE500FEB0F7 /* keyvalq_struct.h */; };
-		08CE782B1CF35BE600FEB0F7 /* listener.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78071CF35BE500FEB0F7 /* listener.h */; };
-		08CE782C1CF35BE600FEB0F7 /* rpc.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78081CF35BE500FEB0F7 /* rpc.h */; };
-		08CE782D1CF35BE600FEB0F7 /* rpc_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78091CF35BE500FEB0F7 /* rpc_compat.h */; };
-		08CE782E1CF35BE600FEB0F7 /* rpc_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE780A1CF35BE500FEB0F7 /* rpc_struct.h */; };
-		08CE782F1CF35BE600FEB0F7 /* tag.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE780B1CF35BE500FEB0F7 /* tag.h */; };
-		08CE78301CF35BE600FEB0F7 /* tag_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE780C1CF35BE500FEB0F7 /* tag_compat.h */; };
-		08CE78311CF35BE600FEB0F7 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE780D1CF35BE500FEB0F7 /* thread.h */; };
-		08CE78321CF35BE600FEB0F7 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE780E1CF35BE500FEB0F7 /* util.h */; };
-		08CE78331CF35BE600FEB0F7 /* evhttp.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE780F1CF35BE500FEB0F7 /* evhttp.h */; };
-		08CE78341CF35BE600FEB0F7 /* evrpc.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78101CF35BE500FEB0F7 /* evrpc.h */; };
-		08CE78351CF35BE600FEB0F7 /* evutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78111CF35BE500FEB0F7 /* evutil.h */; };
+		08CE77DA1CF1D45F00FEB0F7 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE77CE1CF1D42700FEB0F7 /* EventKit.framework */; };
+		08CE78181CF35BE500FEB0F7 /* evdns.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F31CF35BE500FEB0F7 /* evdns.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE78191CF35BE500FEB0F7 /* event.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F41CF35BE500FEB0F7 /* event.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE781A1CF35BE500FEB0F7 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F61CF35BE500FEB0F7 /* buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE781B1CF35BE500FEB0F7 /* buffer_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F71CF35BE500FEB0F7 /* buffer_compat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE781C1CF35BE500FEB0F7 /* bufferevent.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F81CF35BE500FEB0F7 /* bufferevent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE781D1CF35BE500FEB0F7 /* bufferevent_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F91CF35BE500FEB0F7 /* bufferevent_compat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE781E1CF35BE500FEB0F7 /* bufferevent_ssl.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77FA1CF35BE500FEB0F7 /* bufferevent_ssl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE781F1CF35BE500FEB0F7 /* bufferevent_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77FB1CF35BE500FEB0F7 /* bufferevent_struct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE78201CF35BE500FEB0F7 /* dns.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77FC1CF35BE500FEB0F7 /* dns.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE78211CF35BE500FEB0F7 /* dns_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77FD1CF35BE500FEB0F7 /* dns_compat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE78221CF35BE500FEB0F7 /* dns_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77FE1CF35BE500FEB0F7 /* dns_struct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE78231CF35BE500FEB0F7 /* event-config.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77FF1CF35BE500FEB0F7 /* event-config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE78241CF35BE600FEB0F7 /* event.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78001CF35BE500FEB0F7 /* event.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE78251CF35BE600FEB0F7 /* event_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78011CF35BE500FEB0F7 /* event_compat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE78261CF35BE600FEB0F7 /* event_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78021CF35BE500FEB0F7 /* event_struct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE78271CF35BE600FEB0F7 /* http.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78031CF35BE500FEB0F7 /* http.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE78281CF35BE600FEB0F7 /* http_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78041CF35BE500FEB0F7 /* http_compat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE78291CF35BE600FEB0F7 /* http_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78051CF35BE500FEB0F7 /* http_struct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE782A1CF35BE600FEB0F7 /* keyvalq_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78061CF35BE500FEB0F7 /* keyvalq_struct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE782B1CF35BE600FEB0F7 /* listener.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78071CF35BE500FEB0F7 /* listener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE782C1CF35BE600FEB0F7 /* rpc.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78081CF35BE500FEB0F7 /* rpc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE782D1CF35BE600FEB0F7 /* rpc_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78091CF35BE500FEB0F7 /* rpc_compat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE782E1CF35BE600FEB0F7 /* rpc_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE780A1CF35BE500FEB0F7 /* rpc_struct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE782F1CF35BE600FEB0F7 /* tag.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE780B1CF35BE500FEB0F7 /* tag.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE78301CF35BE600FEB0F7 /* tag_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE780C1CF35BE500FEB0F7 /* tag_compat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE78311CF35BE600FEB0F7 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE780D1CF35BE500FEB0F7 /* thread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE78321CF35BE600FEB0F7 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE780E1CF35BE500FEB0F7 /* util.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE78331CF35BE600FEB0F7 /* evhttp.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE780F1CF35BE500FEB0F7 /* evhttp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE78341CF35BE600FEB0F7 /* evrpc.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78101CF35BE500FEB0F7 /* evrpc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CE78351CF35BE600FEB0F7 /* evutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE78111CF35BE500FEB0F7 /* evutil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08CE78361CF35BE600FEB0F7 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE78131CF35BE500FEB0F7 /* libevent.a */; };
 		08CE78371CF35BE600FEB0F7 /* libevent_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE78141CF35BE500FEB0F7 /* libevent_core.a */; };
 		08CE78381CF35BE600FEB0F7 /* libevent_extra.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE78151CF35BE500FEB0F7 /* libevent_extra.a */; };
 		08CE78391CF35BE600FEB0F7 /* libevent_openssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE78161CF35BE500FEB0F7 /* libevent_openssl.a */; };
 		08CE783A1CF35BE600FEB0F7 /* libevent_pthreads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE78171CF35BE500FEB0F7 /* libevent_pthreads.a */; };
+		64DDED471CF41E42008D0276 /* EventCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DDED461CF41E42008D0276 /* EventCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,7 +65,7 @@
 /* Begin PBXFileReference section */
 		08CE77BE1CF1D3EB00FEB0F7 /* EventDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EventDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		08CE77C11CF1D3EB00FEB0F7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		08CE77CE1CF1D42700FEB0F7 /* Event.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Event.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08CE77CE1CF1D42700FEB0F7 /* EventKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EventKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08CE77D01CF1D42700FEB0F7 /* Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		08CE77D21CF1D42700FEB0F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08CE77D61CF1D45000FEB0F7 /* QLEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLEvent.h; sourceTree = "<group>"; };
@@ -104,6 +105,7 @@
 		08CE78151CF35BE500FEB0F7 /* libevent_extra.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent_extra.a; sourceTree = "<group>"; };
 		08CE78161CF35BE500FEB0F7 /* libevent_openssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent_openssl.a; sourceTree = "<group>"; };
 		08CE78171CF35BE500FEB0F7 /* libevent_pthreads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent_pthreads.a; sourceTree = "<group>"; };
+		64DDED461CF41E42008D0276 /* EventCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08CE77DA1CF1D45F00FEB0F7 /* Event.framework in Frameworks */,
+				08CE77DA1CF1D45F00FEB0F7 /* EventKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				08CE77BE1CF1D3EB00FEB0F7 /* EventDemo */,
-				08CE77CE1CF1D42700FEB0F7 /* Event.framework */,
+				08CE77CE1CF1D42700FEB0F7 /* EventKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,6 +165,7 @@
 			children = (
 				08CE77D61CF1D45000FEB0F7 /* QLEvent.h */,
 				08CE77D71CF1D45000FEB0F7 /* QLEvent.m */,
+				64DDED461CF41E42008D0276 /* EventCenter.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -265,13 +268,11 @@
 				08CE781D1CF35BE500FEB0F7 /* bufferevent_compat.h in Headers */,
 				08CE781E1CF35BE500FEB0F7 /* bufferevent_ssl.h in Headers */,
 				08CE78331CF35BE600FEB0F7 /* evhttp.h in Headers */,
-				08CE77D81CF1D45000FEB0F7 /* QLEvent.h in Headers */,
 				08CE782B1CF35BE600FEB0F7 /* listener.h in Headers */,
 				08CE781B1CF35BE500FEB0F7 /* buffer_compat.h in Headers */,
 				08CE78221CF35BE500FEB0F7 /* dns_struct.h in Headers */,
 				08CE782A1CF35BE600FEB0F7 /* keyvalq_struct.h in Headers */,
 				08CE78301CF35BE600FEB0F7 /* tag_compat.h in Headers */,
-				08CE77D11CF1D42700FEB0F7 /* Event.h in Headers */,
 				08CE78261CF35BE600FEB0F7 /* event_struct.h in Headers */,
 				08CE78281CF35BE600FEB0F7 /* http_compat.h in Headers */,
 				08CE78291CF35BE600FEB0F7 /* http_struct.h in Headers */,
@@ -289,6 +290,8 @@
 				08CE781C1CF35BE500FEB0F7 /* bufferevent.h in Headers */,
 				08CE78321CF35BE600FEB0F7 /* util.h in Headers */,
 				08CE78231CF35BE500FEB0F7 /* event-config.h in Headers */,
+				08CE77D81CF1D45000FEB0F7 /* QLEvent.h in Headers */,
+				08CE77D11CF1D42700FEB0F7 /* Event.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,9 +315,9 @@
 			productReference = 08CE77BE1CF1D3EB00FEB0F7 /* EventDemo */;
 			productType = "com.apple.product-type.tool";
 		};
-		08CE77CD1CF1D42700FEB0F7 /* Event */ = {
+		08CE77CD1CF1D42700FEB0F7 /* EventKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 08CE77D31CF1D42700FEB0F7 /* Build configuration list for PBXNativeTarget "Event" */;
+			buildConfigurationList = 08CE77D31CF1D42700FEB0F7 /* Build configuration list for PBXNativeTarget "EventKit" */;
 			buildPhases = (
 				08CE77C91CF1D42700FEB0F7 /* Sources */,
 				08CE77CA1CF1D42700FEB0F7 /* Frameworks */,
@@ -325,9 +328,9 @@
 			);
 			dependencies = (
 			);
-			name = Event;
+			name = EventKit;
 			productName = Event;
-			productReference = 08CE77CE1CF1D42700FEB0F7 /* Event.framework */;
+			productReference = 08CE77CE1CF1D42700FEB0F7 /* EventKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -336,7 +339,7 @@
 		08CE77B61CF1D3EB00FEB0F7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "王青海";
 				TargetAttributes = {
@@ -361,7 +364,7 @@
 			projectRoot = "";
 			targets = (
 				08CE77BD1CF1D3EB00FEB0F7 /* EventDemo */,
-				08CE77CD1CF1D42700FEB0F7 /* Event */,
+				08CE77CD1CF1D42700FEB0F7 /* EventKit */,
 			);
 		};
 /* End PBXProject section */
@@ -390,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08CE77D91CF1D45000FEB0F7 /* QLEvent.m in Sources */,
+				64DDED471CF41E42008D0276 /* EventCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +498,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -512,6 +517,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yuanqing.-.Event";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -521,6 +527,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -563,14 +570,16 @@
 				08CE77C71CF1D3EB00FEB0F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		08CE77D31CF1D42700FEB0F7 /* Build configuration list for PBXNativeTarget "Event" */ = {
+		08CE77D31CF1D42700FEB0F7 /* Build configuration list for PBXNativeTarget "EventKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				08CE77D41CF1D42700FEB0F7 /* Debug */,
 				08CE77D51CF1D42700FEB0F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -233,18 +233,26 @@ void run(void)
         　　}
     　　
     　　
-    　　    if (listen(listener, 16)<0)
-        　　    {
-            　　        perror("listen");
-            　　        return;
-            　　    }
-    　　
-    　　    listener_event = event_new(base, listener, EV_READ|EV_PERSIST, do_accept, (void*)base);
-    　　    /*XXX check it */
-    　　    event_add(listener_event, NULL);
-    　　
-    　　    event_base_dispatch(base);
-    　　}
+　　    if (listen(listener, 16)<0)
+    　　    {
+        　　        perror("listen");
+        　　        return;
+        　　    }
+　　
+　　    listener_event = event_new(base, listener, EV_READ|EV_PERSIST, do_accept, (void*)base);
+　　    /*XXX check it */
+　　    event_add(listener_event, NULL);
+　　
+　　    event_base_dispatch(base);
+    
+    
+    
+    
+    
+    
+    printf("12313123\n");
+    
+}
 //　　
 //　　int main(int c, char **v)
 //　　{

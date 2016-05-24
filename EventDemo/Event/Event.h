@@ -16,5 +16,8 @@ FOUNDATION_EXPORT const unsigned char EventVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Event/PublicHeader.h>
 
-#import <Event/QLEvent.h>
+#import <EventKit/QLEvent.h>
+
+#include <event/event.h>
+
 
