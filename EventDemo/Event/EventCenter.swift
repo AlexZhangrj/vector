@@ -8,13 +8,18 @@
 
 import Cocoa
 
+
+
 class EventCenter {
-    var eventBase: UnsafeMutablePointer<Void>?
+//    let eventBase: UnsafeMutablePointer<Void>
     
     
     init() {
-//        eventBase = 
+//        eventBase =
+    }
     
+    func test() {
+        create_event_base()
     }
     
     

@@ -16,8 +16,9 @@ FOUNDATION_EXPORT const unsigned char EventVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Event/PublicHeader.h>
 
-#import <EventKit/QLEvent.h>
+#import <Event/QLEvent.h>
+#import <Event/SwiftBridgeC.h>
 
-#include <event/event.h>
 
+//void *create_event_base();
 

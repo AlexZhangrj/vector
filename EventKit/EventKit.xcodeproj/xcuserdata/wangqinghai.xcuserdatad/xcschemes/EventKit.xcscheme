@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "08CE77CD1CF1D42700FEB0F7"
-               BuildableName = "Event.framework"
-               BlueprintName = "Event"
-               ReferencedContainer = "container:EventDemo.xcodeproj">
+               BlueprintIdentifier = "6450320B1CF472810022F87A"
+               BuildableName = "EventKit.framework"
+               BlueprintName = "EventKit"
+               ReferencedContainer = "container:EventKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "08CE77CD1CF1D42700FEB0F7"
-            BuildableName = "Event.framework"
-            BlueprintName = "Event"
-            ReferencedContainer = "container:EventDemo.xcodeproj">
+            BlueprintIdentifier = "6450320B1CF472810022F87A"
+            BuildableName = "EventKit.framework"
+            BlueprintName = "EventKit"
+            ReferencedContainer = "container:EventKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "08CE77CD1CF1D42700FEB0F7"
-            BuildableName = "Event.framework"
-            BlueprintName = "Event"
-            ReferencedContainer = "container:EventDemo.xcodeproj">
+            BlueprintIdentifier = "6450320B1CF472810022F87A"
+            BuildableName = "EventKit.framework"
+            BlueprintName = "EventKit"
+            ReferencedContainer = "container:EventKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

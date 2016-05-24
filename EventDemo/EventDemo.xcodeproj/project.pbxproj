@@ -11,7 +11,7 @@
 		08CE77D11CF1D42700FEB0F7 /* Event.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77D01CF1D42700FEB0F7 /* Event.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08CE77D81CF1D45000FEB0F7 /* QLEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77D61CF1D45000FEB0F7 /* QLEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08CE77D91CF1D45000FEB0F7 /* QLEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CE77D71CF1D45000FEB0F7 /* QLEvent.m */; };
-		08CE77DA1CF1D45F00FEB0F7 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE77CE1CF1D42700FEB0F7 /* EventKit.framework */; };
+		08CE77DA1CF1D45F00FEB0F7 /* Event.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE77CE1CF1D42700FEB0F7 /* Event.framework */; };
 		08CE78181CF35BE500FEB0F7 /* evdns.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F31CF35BE500FEB0F7 /* evdns.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08CE78191CF35BE500FEB0F7 /* event.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F41CF35BE500FEB0F7 /* event.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08CE781A1CF35BE500FEB0F7 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CE77F61CF35BE500FEB0F7 /* buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,6 +47,8 @@
 		08CE78381CF35BE600FEB0F7 /* libevent_extra.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE78151CF35BE500FEB0F7 /* libevent_extra.a */; };
 		08CE78391CF35BE600FEB0F7 /* libevent_openssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE78161CF35BE500FEB0F7 /* libevent_openssl.a */; };
 		08CE783A1CF35BE600FEB0F7 /* libevent_pthreads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE78171CF35BE500FEB0F7 /* libevent_pthreads.a */; };
+		645031CE1CF46C9C0022F87A /* SwiftBridgeC.c in Sources */ = {isa = PBXBuildFile; fileRef = 645031CC1CF46C9C0022F87A /* SwiftBridgeC.c */; };
+		645031CF1CF46C9C0022F87A /* SwiftBridgeC.h in Headers */ = {isa = PBXBuildFile; fileRef = 645031CD1CF46C9C0022F87A /* SwiftBridgeC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64DDED471CF41E42008D0276 /* EventCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DDED461CF41E42008D0276 /* EventCenter.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +67,7 @@
 /* Begin PBXFileReference section */
 		08CE77BE1CF1D3EB00FEB0F7 /* EventDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EventDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		08CE77C11CF1D3EB00FEB0F7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		08CE77CE1CF1D42700FEB0F7 /* EventKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EventKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08CE77CE1CF1D42700FEB0F7 /* Event.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Event.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08CE77D01CF1D42700FEB0F7 /* Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		08CE77D21CF1D42700FEB0F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08CE77D61CF1D45000FEB0F7 /* QLEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLEvent.h; sourceTree = "<group>"; };
@@ -105,6 +107,8 @@
 		08CE78151CF35BE500FEB0F7 /* libevent_extra.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent_extra.a; sourceTree = "<group>"; };
 		08CE78161CF35BE500FEB0F7 /* libevent_openssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent_openssl.a; sourceTree = "<group>"; };
 		08CE78171CF35BE500FEB0F7 /* libevent_pthreads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent_pthreads.a; sourceTree = "<group>"; };
+		645031CC1CF46C9C0022F87A /* SwiftBridgeC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SwiftBridgeC.c; sourceTree = "<group>"; };
+		645031CD1CF46C9C0022F87A /* SwiftBridgeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftBridgeC.h; sourceTree = "<group>"; };
 		64DDED461CF41E42008D0276 /* EventCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08CE77DA1CF1D45F00FEB0F7 /* EventKit.framework in Frameworks */,
+				08CE77DA1CF1D45F00FEB0F7 /* Event.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				08CE77BE1CF1D3EB00FEB0F7 /* EventDemo */,
-				08CE77CE1CF1D42700FEB0F7 /* EventKit.framework */,
+				08CE77CE1CF1D42700FEB0F7 /* Event.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +170,8 @@
 				08CE77D61CF1D45000FEB0F7 /* QLEvent.h */,
 				08CE77D71CF1D45000FEB0F7 /* QLEvent.m */,
 				64DDED461CF41E42008D0276 /* EventCenter.swift */,
+				645031CC1CF46C9C0022F87A /* SwiftBridgeC.c */,
+				645031CD1CF46C9C0022F87A /* SwiftBridgeC.h */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -291,6 +297,7 @@
 				08CE78321CF35BE600FEB0F7 /* util.h in Headers */,
 				08CE78231CF35BE500FEB0F7 /* event-config.h in Headers */,
 				08CE77D81CF1D45000FEB0F7 /* QLEvent.h in Headers */,
+				645031CF1CF46C9C0022F87A /* SwiftBridgeC.h in Headers */,
 				08CE77D11CF1D42700FEB0F7 /* Event.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,9 +322,9 @@
 			productReference = 08CE77BE1CF1D3EB00FEB0F7 /* EventDemo */;
 			productType = "com.apple.product-type.tool";
 		};
-		08CE77CD1CF1D42700FEB0F7 /* EventKit */ = {
+		08CE77CD1CF1D42700FEB0F7 /* Event */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 08CE77D31CF1D42700FEB0F7 /* Build configuration list for PBXNativeTarget "EventKit" */;
+			buildConfigurationList = 08CE77D31CF1D42700FEB0F7 /* Build configuration list for PBXNativeTarget "Event" */;
 			buildPhases = (
 				08CE77C91CF1D42700FEB0F7 /* Sources */,
 				08CE77CA1CF1D42700FEB0F7 /* Frameworks */,
@@ -328,9 +335,9 @@
 			);
 			dependencies = (
 			);
-			name = EventKit;
+			name = Event;
 			productName = Event;
-			productReference = 08CE77CE1CF1D42700FEB0F7 /* EventKit.framework */;
+			productReference = 08CE77CE1CF1D42700FEB0F7 /* Event.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -364,7 +371,7 @@
 			projectRoot = "";
 			targets = (
 				08CE77BD1CF1D3EB00FEB0F7 /* EventDemo */,
-				08CE77CD1CF1D42700FEB0F7 /* EventKit */,
+				08CE77CD1CF1D42700FEB0F7 /* Event */,
 			);
 		};
 /* End PBXProject section */
@@ -394,6 +401,7 @@
 			files = (
 				08CE77D91CF1D45000FEB0F7 /* QLEvent.m in Sources */,
 				64DDED471CF41E42008D0276 /* EventCenter.swift in Sources */,
+				645031CE1CF46C9C0022F87A /* SwiftBridgeC.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,7 +580,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		08CE77D31CF1D42700FEB0F7 /* Build configuration list for PBXNativeTarget "EventKit" */ = {
+		08CE77D31CF1D42700FEB0F7 /* Build configuration list for PBXNativeTarget "Event" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				08CE77D41CF1D42700FEB0F7 /* Debug */,
