@@ -16,5 +16,8 @@ struct CCA {
     int b;
 };
 
+void test();
+
+
 
 #endif /* TC_h */

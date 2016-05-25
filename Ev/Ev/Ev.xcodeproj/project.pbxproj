@@ -13,7 +13,22 @@
 		08162FD21CF5F68D000A5F41 /* EventCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08162FD11CF5F68D000A5F41 /* EventCenter.swift */; };
 		08162FD51CF5F73E000A5F41 /* TC.c in Sources */ = {isa = PBXBuildFile; fileRef = 08162FD31CF5F73E000A5F41 /* TC.c */; };
 		08162FD61CF5F73E000A5F41 /* TC.h in Headers */ = {isa = PBXBuildFile; fileRef = 08162FD41CF5F73E000A5F41 /* TC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77E282F01CF6012B00B44EE4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E282EF1CF6012B00B44EE4 /* main.swift */; };
+		77E282F41CF601A400B44EE4 /* Ev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08162FC01CF5F613000A5F41 /* Ev.framework */; };
+		77E283461CF604A600B44EE4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E283451CF604A600B44EE4 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77E282EB1CF6012B00B44EE4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		08162FC01CF5F613000A5F41 /* Ev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +39,9 @@
 		08162FD11CF5F68D000A5F41 /* EventCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCenter.swift; sourceTree = "<group>"; };
 		08162FD31CF5F73E000A5F41 /* TC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TC.c; sourceTree = "<group>"; };
 		08162FD41CF5F73E000A5F41 /* TC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TC.h; sourceTree = "<group>"; };
+		77E282ED1CF6012B00B44EE4 /* EvDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EvDemo; sourceTree = BUILT_PRODUCTS_DIR; };
+		77E282EF1CF6012B00B44EE4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		77E283451CF604A600B44EE4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +49,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E283461CF604A600B44EE4 /* Cocoa.framework in Frameworks */,
 				08162FCC1CF5F624000A5F41 /* libev.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77E282EA1CF6012B00B44EE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E282F41CF601A400B44EE4 /* Ev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,12 +68,14 @@
 		08162FB61CF5F613000A5F41 = {
 			isa = PBXGroup;
 			children = (
+				77E283451CF604A600B44EE4 /* Cocoa.framework */,
 				08162FD31CF5F73E000A5F41 /* TC.c */,
 				08162FD41CF5F73E000A5F41 /* TC.h */,
 				08162FD11CF5F68D000A5F41 /* EventCenter.swift */,
 				08162FCF1CF5F639000A5F41 /* ev.h */,
 				08162FCB1CF5F624000A5F41 /* libev.a */,
 				08162FC21CF5F613000A5F41 /* Ev */,
+				77E282EE1CF6012B00B44EE4 /* EvDemo */,
 				08162FC11CF5F613000A5F41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				08162FC01CF5F613000A5F41 /* Ev.framework */,
+				77E282ED1CF6012B00B44EE4 /* EvDemo */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,6 +96,14 @@
 				08162FC51CF5F613000A5F41 /* Info.plist */,
 			);
 			path = Ev;
+			sourceTree = "<group>";
+		};
+		77E282EE1CF6012B00B44EE4 /* EvDemo */ = {
+			isa = PBXGroup;
+			children = (
+				77E282EF1CF6012B00B44EE4 /* main.swift */,
+			);
+			path = EvDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,17 +140,38 @@
 			productReference = 08162FC01CF5F613000A5F41 /* Ev.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		77E282EC1CF6012B00B44EE4 /* EvDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77E282F31CF6012B00B44EE4 /* Build configuration list for PBXNativeTarget "EvDemo" */;
+			buildPhases = (
+				77E282E91CF6012B00B44EE4 /* Sources */,
+				77E282EA1CF6012B00B44EE4 /* Frameworks */,
+				77E282EB1CF6012B00B44EE4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EvDemo;
+			productName = EvDemo;
+			productReference = 77E282ED1CF6012B00B44EE4 /* EvDemo */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		08162FB71CF5F613000A5F41 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "王青海";
 				TargetAttributes = {
 					08162FBF1CF5F613000A5F41 = {
 						CreatedOnToolsVersion = 7.1.1;
+					};
+					77E282EC1CF6012B00B44EE4 = {
+						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
@@ -129,6 +188,7 @@
 			projectRoot = "";
 			targets = (
 				08162FBF1CF5F613000A5F41 /* Ev */,
+				77E282EC1CF6012B00B44EE4 /* EvDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -150,6 +210,14 @@
 			files = (
 				08162FD51CF5F73E000A5F41 /* TC.c in Sources */,
 				08162FD21CF5F68D000A5F41 /* EventCenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77E282E91CF6012B00B44EE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E282F01CF6012B00B44EE4 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +357,22 @@
 			};
 			name = Release;
 		};
+		77E282F11CF6012B00B44EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		77E282F21CF6012B00B44EE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -306,6 +390,15 @@
 			buildConfigurations = (
 				08162FC91CF5F613000A5F41 /* Debug */,
 				08162FCA1CF5F613000A5F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77E282F31CF6012B00B44EE4 /* Build configuration list for PBXNativeTarget "EvDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77E282F11CF6012B00B44EE4 /* Debug */,
+				77E282F21CF6012B00B44EE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

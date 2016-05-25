@@ -6,7 +6,7 @@
 //  Copyright © 2016年 王青海. All rights reserved.
 //
 
-import Foundation
+import Cocoa
 
 class EventCenter: NSObject {
 
