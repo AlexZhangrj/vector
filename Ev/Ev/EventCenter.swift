@@ -10,7 +10,7 @@ import Cocoa
 
 class EventCenter: NSObject {
 
-    var ccc: UnsafeMutablePointer<CCA>?
+//    var ccc: UnsafeMutablePointer<ev_prepare>?
 
     
 //    var ccc: UnsafeMutablePointer<ev_async>?

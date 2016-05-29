@@ -13,12 +13,39 @@
 		08162FD21CF5F68D000A5F41 /* EventCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08162FD11CF5F68D000A5F41 /* EventCenter.swift */; };
 		08162FD51CF5F73E000A5F41 /* TC.c in Sources */ = {isa = PBXBuildFile; fileRef = 08162FD31CF5F73E000A5F41 /* TC.c */; };
 		08162FD61CF5F73E000A5F41 /* TC.h in Headers */ = {isa = PBXBuildFile; fileRef = 08162FD41CF5F73E000A5F41 /* TC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		089BD8B21CFABB5800C90147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089BD8B11CFABB5800C90147 /* AppDelegate.swift */; };
+		089BD8B41CFABB5800C90147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 089BD8B31CFABB5800C90147 /* Assets.xcassets */; };
+		089BD8B71CFABB5800C90147 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 089BD8B51CFABB5800C90147 /* MainMenu.xib */; };
+		089BD8BC1CFABB8300C90147 /* Ev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08162FC01CF5F613000A5F41 /* Ev.framework */; };
+		089BD8BD1CFABB8300C90147 /* Ev.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08162FC01CF5F613000A5F41 /* Ev.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		089BD8C31CFAC3C800C90147 /* Test2.c in Sources */ = {isa = PBXBuildFile; fileRef = 089BD8C11CFAC3C800C90147 /* Test2.c */; };
+		089BD8C41CFAC3C800C90147 /* Test2.h in Headers */ = {isa = PBXBuildFile; fileRef = 089BD8C21CFAC3C800C90147 /* Test2.h */; };
 		77E282F01CF6012B00B44EE4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E282EF1CF6012B00B44EE4 /* main.swift */; };
 		77E282F41CF601A400B44EE4 /* Ev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08162FC01CF5F613000A5F41 /* Ev.framework */; };
-		77E283461CF604A600B44EE4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E283451CF604A600B44EE4 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		089BD8BE1CFABB8300C90147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08162FB71CF5F613000A5F41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08162FBF1CF5F613000A5F41;
+			remoteInfo = Ev;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		089BD8C01CFABB8300C90147 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				089BD8BD1CFABB8300C90147 /* Ev.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77E282EB1CF6012B00B44EE4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,9 +66,15 @@
 		08162FD11CF5F68D000A5F41 /* EventCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCenter.swift; sourceTree = "<group>"; };
 		08162FD31CF5F73E000A5F41 /* TC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TC.c; sourceTree = "<group>"; };
 		08162FD41CF5F73E000A5F41 /* TC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TC.h; sourceTree = "<group>"; };
+		089BD8AF1CFABB5800C90147 /* EvMacDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvMacDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		089BD8B11CFABB5800C90147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		089BD8B31CFABB5800C90147 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		089BD8B61CFABB5800C90147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		089BD8B81CFABB5800C90147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		089BD8C11CFAC3C800C90147 /* Test2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Test2.c; sourceTree = "<group>"; };
+		089BD8C21CFAC3C800C90147 /* Test2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test2.h; sourceTree = "<group>"; };
 		77E282ED1CF6012B00B44EE4 /* EvDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EvDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E282EF1CF6012B00B44EE4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		77E283451CF604A600B44EE4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,8 +82,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77E283461CF604A600B44EE4 /* Cocoa.framework in Frameworks */,
 				08162FCC1CF5F624000A5F41 /* libev.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089BD8AC1CFABB5800C90147 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089BD8BC1CFABB8300C90147 /* Ev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +108,8 @@
 		08162FB61CF5F613000A5F41 = {
 			isa = PBXGroup;
 			children = (
-				77E283451CF604A600B44EE4 /* Cocoa.framework */,
+				089BD8C11CFAC3C800C90147 /* Test2.c */,
+				089BD8C21CFAC3C800C90147 /* Test2.h */,
 				08162FD31CF5F73E000A5F41 /* TC.c */,
 				08162FD41CF5F73E000A5F41 /* TC.h */,
 				08162FD11CF5F68D000A5F41 /* EventCenter.swift */,
@@ -76,6 +117,7 @@
 				08162FCB1CF5F624000A5F41 /* libev.a */,
 				08162FC21CF5F613000A5F41 /* Ev */,
 				77E282EE1CF6012B00B44EE4 /* EvDemo */,
+				089BD8B01CFABB5800C90147 /* EvMacDemo */,
 				08162FC11CF5F613000A5F41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +127,7 @@
 			children = (
 				08162FC01CF5F613000A5F41 /* Ev.framework */,
 				77E282ED1CF6012B00B44EE4 /* EvDemo */,
+				089BD8AF1CFABB5800C90147 /* EvMacDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +139,17 @@
 				08162FC51CF5F613000A5F41 /* Info.plist */,
 			);
 			path = Ev;
+			sourceTree = "<group>";
+		};
+		089BD8B01CFABB5800C90147 /* EvMacDemo */ = {
+			isa = PBXGroup;
+			children = (
+				089BD8B11CFABB5800C90147 /* AppDelegate.swift */,
+				089BD8B31CFABB5800C90147 /* Assets.xcassets */,
+				089BD8B51CFABB5800C90147 /* MainMenu.xib */,
+				089BD8B81CFABB5800C90147 /* Info.plist */,
+			);
+			path = EvMacDemo;
 			sourceTree = "<group>";
 		};
 		77E282EE1CF6012B00B44EE4 /* EvDemo */ = {
@@ -116,6 +170,7 @@
 				08162FD01CF5F639000A5F41 /* ev.h in Headers */,
 				08162FD61CF5F73E000A5F41 /* TC.h in Headers */,
 				08162FC41CF5F613000A5F41 /* Ev.h in Headers */,
+				089BD8C41CFAC3C800C90147 /* Test2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +194,25 @@
 			productName = Ev;
 			productReference = 08162FC01CF5F613000A5F41 /* Ev.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		089BD8AE1CFABB5800C90147 /* EvMacDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 089BD8BB1CFABB5800C90147 /* Build configuration list for PBXNativeTarget "EvMacDemo" */;
+			buildPhases = (
+				089BD8AB1CFABB5800C90147 /* Sources */,
+				089BD8AC1CFABB5800C90147 /* Frameworks */,
+				089BD8AD1CFABB5800C90147 /* Resources */,
+				089BD8C01CFABB8300C90147 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				089BD8BF1CFABB8300C90147 /* PBXTargetDependency */,
+			);
+			name = EvMacDemo;
+			productName = EvMacDemo;
+			productReference = 089BD8AF1CFABB5800C90147 /* EvMacDemo.app */;
+			productType = "com.apple.product-type.application";
 		};
 		77E282EC1CF6012B00B44EE4 /* EvDemo */ = {
 			isa = PBXNativeTarget;
@@ -170,6 +244,9 @@
 					08162FBF1CF5F613000A5F41 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
+					089BD8AE1CFABB5800C90147 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					77E282EC1CF6012B00B44EE4 = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -181,6 +258,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 08162FB61CF5F613000A5F41;
 			productRefGroup = 08162FC11CF5F613000A5F41 /* Products */;
@@ -189,6 +267,7 @@
 			targets = (
 				08162FBF1CF5F613000A5F41 /* Ev */,
 				77E282EC1CF6012B00B44EE4 /* EvDemo */,
+				089BD8AE1CFABB5800C90147 /* EvMacDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +280,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		089BD8AD1CFABB5800C90147 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089BD8B41CFABB5800C90147 /* Assets.xcassets in Resources */,
+				089BD8B71CFABB5800C90147 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -208,8 +296,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				089BD8C31CFAC3C800C90147 /* Test2.c in Sources */,
 				08162FD51CF5F73E000A5F41 /* TC.c in Sources */,
 				08162FD21CF5F68D000A5F41 /* EventCenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089BD8AB1CFABB5800C90147 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089BD8B21CFABB5800C90147 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +319,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		089BD8BF1CFABB8300C90147 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08162FBF1CF5F613000A5F41 /* Ev */;
+			targetProxy = 089BD8BE1CFABB8300C90147 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089BD8B51CFABB5800C90147 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089BD8B61CFABB5800C90147 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		08162FC61CF5F613000A5F41 /* Debug */ = {
@@ -357,6 +473,34 @@
 			};
 			name = Release;
 		};
+		089BD8B91CFABB5800C90147 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = EvMacDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuanqing.-.EvMacDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		089BD8BA1CFABB5800C90147 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = EvMacDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuanqing.-.EvMacDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		77E282F11CF6012B00B44EE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -394,6 +538,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		089BD8BB1CFABB5800C90147 /* Build configuration list for PBXNativeTarget "EvMacDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				089BD8B91CFABB5800C90147 /* Debug */,
+				089BD8BA1CFABB5800C90147 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		77E282F31CF6012B00B44EE4 /* Build configuration list for PBXNativeTarget "EvDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -401,6 +553,7 @@
 				77E282F21CF6012B00B44EE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

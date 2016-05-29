@@ -17,5 +17,5 @@ const unsigned char EvVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <Ev/PublicHeader.h>
 
 //
-//#import <Ev/ev.h>
-//#import <Ev/TC.h>
+//#import <Ev/libev/ev.h>
+#import <Ev/TC.h>
