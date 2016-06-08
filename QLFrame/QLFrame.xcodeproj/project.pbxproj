@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		646E25911D0592980035F739 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646E25901D0592980035F739 /* BaseViewController.swift */; };
+		646E25931D0593840035F739 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646E25921D0593840035F739 /* BaseNavigationController.swift */; };
+		646E25951D0595780035F739 /* FilePathConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646E25941D0595780035F739 /* FilePathConfig.swift */; };
+		646E25971D0596250035F739 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646E25961D0596250035F739 /* Result.swift */; };
 		776509FA1CA030F1007C49F2 /* QLAdress.m in Sources */ = {isa = PBXBuildFile; fileRef = 776509F91CA030F1007C49F2 /* QLAdress.m */; };
 		77E690021C9E9BED009719FD /* QLADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E68FEA1C9E9BED009719FD /* QLADScrollView.m */; };
 		77E690031C9E9BED009719FD /* QLADScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E68FEC1C9E9BED009719FD /* QLADScrollViewCell.m */; };
@@ -82,6 +86,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		646E258F1D0592970035F739 /* QLFrame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QLFrame-Bridging-Header.h"; sourceTree = "<group>"; };
+		646E25901D0592980035F739 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		646E25921D0593840035F739 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		646E25941D0595780035F739 /* FilePathConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilePathConfig.swift; sourceTree = "<group>"; };
+		646E25961D0596250035F739 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		776509F81CA030F1007C49F2 /* QLAdress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLAdress.h; sourceTree = "<group>"; };
 		776509F91CA030F1007C49F2 /* QLAdress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLAdress.m; sourceTree = "<group>"; };
 		77E68FE91C9E9BED009719FD /* QLADScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLADScrollView.h; sourceTree = "<group>"; };
@@ -251,6 +260,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		646E258E1D0592890035F739 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				646E25961D0596250035F739 /* Result.swift */,
+				646E25941D0595780035F739 /* FilePathConfig.swift */,
+				646E25921D0593840035F739 /* BaseNavigationController.swift */,
+				646E25901D0592980035F739 /* BaseViewController.swift */,
+				646E258F1D0592970035F739 /* QLFrame-Bridging-Header.h */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 		776509F71CA030DB007C49F2 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
@@ -433,6 +454,7 @@
 		B819F0851C74675300AA8751 = {
 			isa = PBXGroup;
 			children = (
+				646E258E1D0592890035F739 /* Swift */,
 				77E690941C9EAC1F009719FD /* QLLogFramework */,
 				77E690521C9E9E89009719FD /* QLDataFramework */,
 				77E68FE71C9E9BED009719FD /* QLUIFoundation */,
@@ -574,6 +596,7 @@
 		B819F0861C74675300AA8751 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = ql;
 				TargetAttributes = {
@@ -650,6 +673,7 @@
 				B819F0F31C74676100AA8751 /* AFNetworkReachabilityManager.m in Sources */,
 				77E6908D1C9E9E89009719FD /* FMDatabaseAdditions.m in Sources */,
 				77E690821C9E9E89009719FD /* QLDataPersistenceAPI.m in Sources */,
+				646E25951D0595780035F739 /* FilePathConfig.swift in Sources */,
 				B819F0F71C74676100AA8751 /* AFURLResponseSerialization.m in Sources */,
 				B819F0F51C74676100AA8751 /* AFURLConnectionOperation.m in Sources */,
 				77E690841C9E9E89009719FD /* QLFilePacket.m in Sources */,
@@ -657,6 +681,7 @@
 				77E6908C1C9E9E89009719FD /* FMDatabase.m in Sources */,
 				77E690901C9E9E89009719FD /* FMResultSet.m in Sources */,
 				B819F0F41C74676100AA8751 /* AFSecurityPolicy.m in Sources */,
+				646E25971D0596250035F739 /* Result.swift in Sources */,
 				77E690071C9E9BED009719FD /* QLTextInputManager.m in Sources */,
 				77E690B41C9EAC1F009719FD /* QLCustomLoger.m in Sources */,
 				77E690061C9E9BED009719FD /* QLStringAPI+QLUIFoundation.m in Sources */,
@@ -666,6 +691,7 @@
 				B819F0F61C74676100AA8751 /* AFURLRequestSerialization.m in Sources */,
 				77E690B91C9EAC1F009719FD /* QLLogCmdServerHandler.m in Sources */,
 				77E6908F1C9E9E89009719FD /* FMDatabaseQueue.m in Sources */,
+				646E25911D0592980035F739 /* BaseViewController.swift in Sources */,
 				77E690851C9E9E89009719FD /* QLFilePacketAPI.m in Sources */,
 				77E690891C9E9E89009719FD /* QLHttpRequestCacheModel.m in Sources */,
 				77E690031C9E9BED009719FD /* QLADScrollViewCell.m in Sources */,
@@ -673,6 +699,7 @@
 				B819F1071C74676100AA8751 /* QLNetwork.m in Sources */,
 				B819F10C1C74676100AA8751 /* SSKeychain.m in Sources */,
 				B819F0F81C74676100AA8751 /* AFURLSessionManager.m in Sources */,
+				646E25931D0593840035F739 /* BaseNavigationController.swift in Sources */,
 				B819F0961C74675300AA8751 /* AppDelegate.m in Sources */,
 				B819F0931C74675300AA8751 /* main.m in Sources */,
 				77E690831C9E9E89009719FD /* QLDirectoryHandleAPI.m in Sources */,
@@ -795,10 +822,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = QLFrame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ql.tool.QLFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift/QLFrame-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -806,10 +836,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = QLFrame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ql.tool.QLFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift/QLFrame-Bridging-Header.h";
 			};
 			name = Release;
 		};
