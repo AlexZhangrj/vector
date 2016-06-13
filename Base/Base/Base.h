@@ -27,3 +27,4 @@ FOUNDATION_EXPORT const unsigned char BaseVersionString[];
 #import <Base/FMResultSet.h>
 #import <Base/FMTokenizers.h>
 #import <Base/FMDatabase+FTS3.h>
+//#import <CommonCrypto/CommonDigest.h>

@@ -42,7 +42,43 @@
 		08AD48A81D0933570090E528 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AD48931D0933570090E528 /* FMResultSet.m */; };
 		08AD48A91D0933570090E528 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08AD48941D0933570090E528 /* Info.plist */; };
 		08AD48AB1D09337A0090E528 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AD48AA1D09337A0090E528 /* libsqlite3.0.tbd */; };
+		08AD48AF1D0947A30090E528 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD48AE1D0947A30090E528 /* Config.swift */; };
+		08AD48B11D09483A0090E528 /* ConfigDBHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD48B01D09483A0090E528 /* ConfigDBHandler.swift */; };
+		08AD48B21D0949CD0090E528 /* Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089BD9211D01CF9100C90147 /* Base.framework */; };
+		08AD48B31D0949CD0090E528 /* Base.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 089BD9211D01CF9100C90147 /* Base.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		08AD48BB1D095EB60090E528 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 08AD48B91D095EB60090E528 /* README.md */; };
+		08AD48BC1D095EB60090E528 /* SwCrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD48BA1D095EB60090E528 /* SwCrypt.swift */; };
+		08AD48BF1D095EF90090E528 /* NSData+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD48BE1D095EF90090E528 /* NSData+Base64.swift */; };
+		08AD48C51D09BE410090E528 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD48C21D09BE410090E528 /* Keychain.swift */; };
+		08AD48C61D09BE410090E528 /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = 08AD48C31D09BE410090E528 /* LICENSE.md */; };
+		08AD48C71D09BE410090E528 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 08AD48C41D09BE410090E528 /* README.md */; };
+		08AD48C91D09D10C0090E528 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD48C81D09D10C0090E528 /* String+Extension.swift */; };
+		08AD48CB1D09DA390090E528 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD48CA1D09DA390090E528 /* Base.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08AD48B41D0949CD0090E528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089BD9181D01CF9100C90147 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 089BD9201D01CF9100C90147;
+			remoteInfo = Base;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		08AD48B61D0949CD0090E528 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				08AD48B31D0949CD0090E528 /* Base.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089BD9211D01CF9100C90147 /* Base.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Base.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +120,18 @@
 		08AD48931D0933570090E528 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		08AD48941D0933570090E528 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08AD48AA1D09337A0090E528 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		08AD48AE1D0947A30090E528 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		08AD48B01D09483A0090E528 /* ConfigDBHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigDBHandler.swift; sourceTree = "<group>"; };
+		08AD48B91D095EB60090E528 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		08AD48BA1D095EB60090E528 /* SwCrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwCrypt.swift; sourceTree = "<group>"; };
+		08AD48BE1D095EF90090E528 /* NSData+Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Base64.swift"; sourceTree = "<group>"; };
+		08AD48C01D0961190090E528 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		08AD48C21D09BE410090E528 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		08AD48C31D09BE410090E528 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		08AD48C41D09BE410090E528 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		08AD48C81D09D10C0090E528 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		08AD48CA1D09DA390090E528 /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		08AD49591D0C1AB50090E528 /* Unit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Unit.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08AD48B21D0949CD0090E528 /* Base.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +157,8 @@
 		089BD9171D01CF9100C90147 = {
 			isa = PBXGroup;
 			children = (
+				08AD49591D0C1AB50090E528 /* Unit.playground */,
+				08AD48C01D0961190090E528 /* MyPlayground.playground */,
 				08AD48AA1D09337A0090E528 /* libsqlite3.0.tbd */,
 				089BD9421D01D2CF00C90147 /* Sources */,
 				089BD9231D01CF9100C90147 /* Base */,
@@ -150,10 +201,12 @@
 		089BD9421D01D2CF00C90147 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				08AD48B71D094C6B0090E528 /* Security */,
 				08AD48771D0872FA0090E528 /* Config */,
 				08AD48681D0872E70090E528 /* Cache */,
 				08AD486C1D0872E70090E528 /* File */,
 				08AD486E1D0872E70090E528 /* Util */,
+				08AD48CA1D09DA390090E528 /* Base.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -190,6 +243,8 @@
 		08AD48771D0872FA0090E528 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				08AD48AE1D0947A30090E528 /* Config.swift */,
+				08AD48B01D09483A0090E528 /* ConfigDBHandler.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -262,6 +317,44 @@
 			path = FMDB;
 			sourceTree = "<group>";
 		};
+		08AD48B71D094C6B0090E528 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				08AD48C11D09BE410090E528 /* Keychain */,
+				08AD48BD1D095EE70090E528 /* String */,
+				08AD48B81D095EB60090E528 /* SwCrypt */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		08AD48B81D095EB60090E528 /* SwCrypt */ = {
+			isa = PBXGroup;
+			children = (
+				08AD48B91D095EB60090E528 /* README.md */,
+				08AD48BA1D095EB60090E528 /* SwCrypt.swift */,
+			);
+			path = SwCrypt;
+			sourceTree = "<group>";
+		};
+		08AD48BD1D095EE70090E528 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				08AD48BE1D095EF90090E528 /* NSData+Base64.swift */,
+				08AD48C81D09D10C0090E528 /* String+Extension.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		08AD48C11D09BE410090E528 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				08AD48C21D09BE410090E528 /* Keychain.swift */,
+				08AD48C31D09BE410090E528 /* LICENSE.md */,
+				08AD48C41D09BE410090E528 /* README.md */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -309,12 +402,14 @@
 			buildConfigurationList = 089BD93F1D01CFA500C90147 /* Build configuration list for PBXNativeTarget "BaseDemo" */;
 			buildPhases = (
 				089BD92C1D01CFA500C90147 /* Sources */,
-				089BD92D1D01CFA500C90147 /* Frameworks */,
 				089BD92E1D01CFA500C90147 /* Resources */,
+				089BD92D1D01CFA500C90147 /* Frameworks */,
+				08AD48B61D0949CD0090E528 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				08AD48B51D0949CD0090E528 /* PBXTargetDependency */,
 			);
 			name = BaseDemo;
 			productName = BaseDemo;
@@ -386,19 +481,29 @@
 			files = (
 				08AD48761D0872E70090E528 /* GCD.swift in Sources */,
 				08AD48981D0933570090E528 /* FMTokenizers.m in Sources */,
+				08AD48BB1D095EB60090E528 /* README.md in Sources */,
 				08AD489F1D0933570090E528 /* FMDatabase.m in Sources */,
+				08AD48C61D09BE410090E528 /* LICENSE.md in Sources */,
 				08AD489D1D0933570090E528 /* FMDatabaseVariadic.swift in Sources */,
+				08AD48BF1D095EF90090E528 /* NSData+Base64.swift in Sources */,
+				08AD48B11D09483A0090E528 /* ConfigDBHandler.swift in Sources */,
+				08AD48BC1D095EB60090E528 /* SwCrypt.swift in Sources */,
 				08AD48711D0872E70090E528 /* Cache.swift in Sources */,
 				08AD48A11D0933570090E528 /* FMDatabaseAdditions.m in Sources */,
 				08AD48741D0872E70090E528 /* PathKit.swift in Sources */,
+				08AD48C71D09BE410090E528 /* README.md in Sources */,
+				08AD48C91D09D10C0090E528 /* String+Extension.swift in Sources */,
+				08AD48C51D09BE410090E528 /* Keychain.swift in Sources */,
 				08AD48A31D0933570090E528 /* FMDatabasePool.m in Sources */,
 				08AD48791D08730E0090E528 /* FileManager.swift in Sources */,
 				08AD48A51D0933570090E528 /* FMDatabaseQueue.m in Sources */,
 				08AD489B1D0933570090E528 /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
+				08AD48AF1D0947A30090E528 /* Config.swift in Sources */,
 				08AD48721D0872E70090E528 /* NSCache+subscript.swift in Sources */,
 				08AD48751D0872E70090E528 /* Async.swift in Sources */,
 				08AD48A81D0933570090E528 /* FMResultSet.m in Sources */,
 				08AD48731D0872E70090E528 /* WeakReferenceMap.swift in Sources */,
+				08AD48CB1D09DA390090E528 /* Base.swift in Sources */,
 				08AD48961D0933570090E528 /* FMDatabase+FTS3.m in Sources */,
 				08AD489C1D0933570090E528 /* FMDatabaseAdditionsVariadic.swift in Sources */,
 			);
@@ -414,6 +519,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08AD48B51D0949CD0090E528 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 089BD9201D01CF9100C90147 /* Base */;
+			targetProxy = 08AD48B41D0949CD0090E528 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089BD9361D01CFA500C90147 /* Main.storyboard */ = {
@@ -565,6 +678,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BaseDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yuanqing.-.BaseDemo";
@@ -576,6 +690,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BaseDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yuanqing.-.BaseDemo";

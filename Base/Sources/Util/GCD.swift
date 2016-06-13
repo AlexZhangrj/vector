@@ -91,5 +91,71 @@
 //    
 //    
 //}
-//
-//
+
+//返回值是否取消timer， 取消返回true
+public typealias ExponentialTimerTask = (timer: ExponentialTimer) -> Bool
+
+public class ExponentialTimer: NSObject {
+    public var currentAfterTime: NSTimeInterval
+    private var _task: ExponentialTimerTask?
+    private var _canceled: Bool = false
+    
+    public init(originalAfterTime: NSTimeInterval, task: ExponentialTimerTask) {
+        self._task = task
+        self.currentAfterTime = originalAfterTime
+        super.init()
+        if originalAfterTime > 0 {
+            Async.userInitiated(after: originalAfterTime, block: { 
+                self.doTask()
+            })
+        }else {
+            _canceled = true
+        }
+    }
+
+    public func cancel() {
+        self._task = nil
+        _canceled = true
+    }
+    
+    public func canceled() -> Bool {
+        return _canceled
+    }
+    
+    private func doTask() {
+        if let call = self._task {
+            if !call(timer: self) {
+                self.currentAfterTime *= 2
+                Async.userInitiated(after: self.currentAfterTime, block: {
+                    self.doTask()
+                })
+            }else {
+                self._task = nil
+                _canceled = true
+            }
+        }else {
+            _canceled = true
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

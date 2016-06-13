@@ -49,8 +49,4 @@ public class Cache : NSObject {
             cache[key] = newValue
         }
     }
-
-
-    
-    
 }
