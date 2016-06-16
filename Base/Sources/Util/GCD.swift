@@ -99,20 +99,28 @@ public class ExponentialTimer: NSObject {
     public var currentAfterTime: NSTimeInterval
     private var _task: ExponentialTimerTask?
     private var _canceled: Bool = false
+    private var queue: dispatch_queue_t?
     
-    public init(originalAfterTime: NSTimeInterval, task: ExponentialTimerTask) {
+    
+    public init(originalAfterTime: NSTimeInterval, task: ExponentialTimerTask, queue: dispatch_queue_t? = nil) {
         self._task = task
         self.currentAfterTime = originalAfterTime
         super.init()
         if originalAfterTime > 0 {
-            Async.userInitiated(after: originalAfterTime, block: { 
-                self.doTask()
-            })
+            if let callQueue = self.queue {
+                Async.customQueue(callQueue, after: originalAfterTime, block: {
+                    self.doTask()
+                })
+            }else {
+                Async.userInitiated(after: originalAfterTime, block: {
+                    self.doTask()
+                })
+            }
         }else {
             _canceled = true
         }
     }
-
+    
     public func cancel() {
         self._task = nil
         _canceled = true
@@ -126,9 +134,16 @@ public class ExponentialTimer: NSObject {
         if let call = self._task {
             if !call(timer: self) {
                 self.currentAfterTime *= 2
-                Async.userInitiated(after: self.currentAfterTime, block: {
-                    self.doTask()
-                })
+                
+                if let callQueue = self.queue {
+                    Async.customQueue(callQueue, after: self.currentAfterTime, block: {
+                        self.doTask()
+                    })
+                }else {
+                    Async.userInitiated(after: self.currentAfterTime, block: {
+                        self.doTask()
+                    })
+                }
             }else {
                 self._task = nil
                 _canceled = true
