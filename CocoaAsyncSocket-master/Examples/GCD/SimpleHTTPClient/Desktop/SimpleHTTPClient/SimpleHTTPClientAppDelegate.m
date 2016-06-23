@@ -1,15 +1,10 @@
 #import "SimpleHTTPClientAppDelegate.h"
 #import "GCDAsyncSocket.h"
-#import "DDLog.h"
-#import "DDTTYLogger.h"
-#import "DDDispatchQueueLogFormatter.h"
 
-// Log levels: off, error, warn, info, verbose
-static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 #define  WWW_PORT 0  // 0 => automatic
-#define  WWW_HOST @"www.amazon.com"
-#define CERT_HOST @"www.amazon.com"
+#define  WWW_HOST @"www.baidu.com"
+#define CERT_HOST @"www.baidu.com"
 
 #define USE_SECURE_CONNECTION    1
 #define MANUALLY_EVALUATE_TRUST  1
@@ -40,7 +35,6 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 	// 
 	// But this one line is all you need to instruct Lumberjack to spit out log statements to the Xcode console.
 	
-	[DDLog addLogger:[DDTTYLogger sharedInstance]];
 	
 	// We're going to take advantage of some of Lumberjack's advanced features.
 	//
@@ -54,12 +48,8 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 	// New : 2011-12-05 19:54:08:161 [main] Connecting...
 	//       2011-12-05 19:54:08:161 [socket] GCDAsyncSocket: Dispatching DNS lookup...
 	//       2011-12-05 19:54:08:161 [socket] GCDAsyncSocket: Creating IPv4 socket
+
 	
-	DDDispatchQueueLogFormatter *formatter = [[DDDispatchQueueLogFormatter alloc] init];
-	[formatter setReplacementString:@"socket" forQueueLabel:GCDAsyncSocketQueueName];
-	[formatter setReplacementString:@"socket-cf" forQueueLabel:GCDAsyncSocketThreadName];
-	
-	[[DDTTYLogger sharedInstance] setLogFormatter:formatter];
 	
 	// Start the socket stuff
 	
@@ -111,11 +101,11 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 	
 	if (![asyncSocket connectToHost:WWW_HOST onPort:port error:&error])
 	{
-		DDLogError(@"Unable to connect to due to invalid configuration: %@", error);
+		NSLog(@"Unable to connect to due to invalid configuration: %@", error);
 	}
 	else
 	{
-		DDLogVerbose(@"Connecting to \"%@\" on port %hu...", WWW_HOST, port);
+		NSLog(@"Connecting to \"%@\" on port %hu...", WWW_HOST, port);
 	}
 	
 #if USE_SECURE_CONNECTION
@@ -145,7 +135,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 		    GCDAsyncSocketSSLPeerName : CERT_HOST
 		};
 		
-		DDLogVerbose(@"Requesting StartTLS with options:\n%@", options);
+		NSLog(@"Requesting StartTLS with options:\n%@", options);
 		[asyncSocket startTLS:options];
 	}
 	#else
@@ -156,7 +146,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 		    GCDAsyncSocketSSLPeerName : CERT_HOST
 		};
 		
-		DDLogVerbose(@"Requesting StartTLS with options:\n%@", options);
+		NSLog(@"Requesting StartTLS with options:\n%@", options);
 		[asyncSocket startTLS:options];
 	}
 	#endif
@@ -166,7 +156,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 - (void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(UInt16)port
 {
-	DDLogVerbose(@"socket:didConnectToHost:%@ port:%hu", host, port);
+	NSLog(@"socket:didConnectToHost:%@ port:%hu", host, port);
 	
 	// HTTP is a really simple protocol.
 	// 
@@ -183,7 +173,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 	
 	[asyncSocket writeData:requestData withTimeout:-1.0 tag:0];
 	
-	DDLogInfo(@"Full httpRequest:\n%@", requestStr);
+	NSLog(@"Full httpRequest:\n%@", requestStr);
 	
 	// Side Note:
 	// 
@@ -221,7 +211,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 - (void)socket:(GCDAsyncSocket *)sock didReceiveTrust:(SecTrustRef)trust
                                     completionHandler:(void (^)(BOOL shouldTrustPeer))completionHandler
 {
-	DDLogVerbose(@"socket:shouldTrustPeer:");
+	NSLog(@"socket:shouldTrustPeer:");
 	
 	dispatch_queue_t bgQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
 	dispatch_async(bgQueue, ^{
@@ -246,23 +236,23 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 {
 	// This method will be called if USE_SECURE_CONNECTION is set
 	
-	DDLogVerbose(@"socketDidSecure:");
+	NSLog(@"socketDidSecure:");
 }
 
 - (void)socket:(GCDAsyncSocket *)sock didWriteDataWithTag:(long)tag
 {
-	DDLogVerbose(@"socket:didWriteDataWithTag:");
+	NSLog(@"socket:didWriteDataWithTag:");
 }
 
 - (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag
 {
-	DDLogVerbose(@"socket:didReadData:withTag:");
+	NSLog(@"socket:didReadData:withTag:");
 	
 	NSString *httpResponse = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 	
 #if READ_HEADER_LINE_BY_LINE
 	
-	DDLogInfo(@"Line httpResponse: %@", httpResponse);
+	NSLog(@"Line httpResponse: %@", httpResponse);
 	
 	// As per the http protocol, we know the header is terminated with two CRLF's.
 	// In other words, an empty line.
@@ -279,7 +269,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 	
 #else
 	
-	DDLogInfo(@"Full httpResponse:\n%@", httpResponse);
+	NSLog(@"Full httpResponse:\n%@", httpResponse);
 	
 #endif
 	
@@ -289,7 +279,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 {
 	// Since we requested HTTP/1.0, we expect the server to close the connection as soon as it has sent the response.
 	
-	DDLogVerbose(@"socketDidDisconnect:%p withError:%@", sock, err);
+	NSLog(@"socketDidDisconnect:%p withError:%@", sock, err);
 }
 
 @end

@@ -1,7 +1,5 @@
 #import "EchoServerAppDelegate.h"
 #import "GCDAsyncSocket.h"
-#import "DDLog.h"
-#import "DDTTYLogger.h"
 
 #define WELCOME_MSG  0
 #define ECHO_MSG     1
@@ -33,9 +31,7 @@
 	if((self = [super init]))
 	{
 		// Setup our logging framework.
-		
-		[DDLog addLogger:[DDTTYLogger sharedInstance]];
-		
+				
 		// Setup our socket.
 		// The socket will invoke our delegate methods using the usual delegate paradigm.
 		// However, it will invoke the delegate methods on a specified GCD delegate dispatch queue.
@@ -196,17 +192,20 @@
 	
 	[newSocket writeData:welcomeData withTimeout:-1 tag:WELCOME_MSG];
 	
-	[newSocket readDataToData:[GCDAsyncSocket CRLFData] withTimeout:READ_TIMEOUT tag:0];
+    [newSocket readDataWithTimeout:-1 tag:0];
+    
+//	[newSocket readDataToData:[GCDAsyncSocket CRLFData] withTimeout:-1 tag:0];
 }
 
 - (void)socket:(GCDAsyncSocket *)sock didWriteDataWithTag:(long)tag
 {
+    NSLog(@"didWriteDataWithTag   sock:%@  tag:%ld", sock, tag);
 	// This method is executed on the socketQueue (not the main thread)
 	
-	if (tag == ECHO_MSG)
-	{
-		[sock readDataToData:[GCDAsyncSocket CRLFData] withTimeout:READ_TIMEOUT tag:0];
-	}
+//	if (tag == ECHO_MSG)
+//	{
+//		[sock readDataToData:[GCDAsyncSocket CRLFData] withTimeout:READ_TIMEOUT tag:0];
+//	}
 }
 
 - (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag
@@ -220,18 +219,20 @@
 			NSString *msg = [[NSString alloc] initWithData:strData encoding:NSUTF8StringEncoding];
 			if (msg)
 			{
-				[self logMessage:msg];
+//				[self logMessage:msg];
+                NSLog(@"%@", msg);
 			}
 			else
 			{
 				[self logError:@"Error converting received data into UTF-8 String"];
 			}
-		
+            [sock writeData:data withTimeout:-1 tag:0];
 		}
 	});
 	
 	// Echo message back to client
 	[sock writeData:data withTimeout:-1 tag:ECHO_MSG];
+    [sock readDataWithTimeout:-1 tag:0];
 }
 
 /**

@@ -1,10 +1,7 @@
 #import "ConnectTestAppDelegate.h"
 #import "GCDAsyncSocket.h"
-#import "DDLog.h"
-#import "DDTTYLogger.h"
 
 // Log levels: off, error, warn, info, verbose
-static const int ddLogLevel = LOG_LEVEL_INFO;
 
 #define USE_SECURE_CONNECTION 0
 
@@ -16,9 +13,8 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 	// Setup logging framework
-	[DDLog addLogger:[DDTTYLogger sharedInstance]];
 	
-	DDLogInfo(@"%@", THIS_METHOD);
+	NSLog(@"%@", @"");
 	
 	// Setup our socket (GCDAsyncSocket).
 	// The socket will invoke our delegate methods using the usual delegate paradigm.
