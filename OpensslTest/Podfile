@@ -1,0 +1,18 @@
+platform :ios, '8.0'
+
+#pod 'AFNetworking'
+pod 'OpenSSL', '~> 1.0.201'
+
+#pod 'masonry'
+#pod 'JSONModel
+#pod 'MBProgressHUD', '~> 0.9.1'
+#pod 'CocoaAsyncSocket', '~> 7.3.5'
+
+#pod 'Masonry', '~> 0.6.1'
+#pod 'JSONModel
+#pod 'MBProgressHUD'
+#pod 'SDWebImage'
+#pod 'MJRefresh'
+
+
+#pod install --verbose --no-repo-update
