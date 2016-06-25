@@ -81,6 +81,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0880B9701D1C3D7700E3AFD7 /* PathKitDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathKitDemo.h; sourceTree = "<group>"; };
 		089BD9211D01CF9100C90147 /* Base.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Base.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		089BD9241D01CF9100C90147 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
 		089BD9261D01CF9100C90147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -227,6 +228,7 @@
 				08AD487A1D0933570090E528 /* DataBase */,
 				08AD486D1D0872E70090E528 /* PathKit.swift */,
 				08AD48781D08730E0090E528 /* FileManager.swift */,
+				0880B9701D1C3D7700E3AFD7 /* PathKitDemo.h */,
 			);
 			path = File;
 			sourceTree = "<group>";

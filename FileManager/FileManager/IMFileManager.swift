@@ -52,19 +52,19 @@ internal class IMFileManager: FileManager {
 //    /// 数据库根路径，会监测路径存在不存在，不存在就创建
 //    internal let DBHomeDirectoryRelativePath: String
     
-    internal let homeDirectoryRelativePath: Path
-    internal let DBHomeDirectoryRelativePath: Path
+//    internal let homeDirectoryRelativePath: Path
+//    internal let DBHomeDirectoryRelativePath: Path
 
     
     override init(parentDirectoryPath: Path) {
         
         
         
-        let tmpHomeDirectoryRelativePath =
-//            IMFileManager.prepareHomeDirectoryRelativePath(parentDirectoryPath)
-        homeDirectoryRelativePath = Path(parentPath: parentDirectoryPath, path: "")
-        
-        DBHomeDirectoryRelativePath = IMFileManager.prepareDBHomeDirectoryRelativePath(parentDirectoryPath, parentRelativePath: tmpHomeDirectoryRelativePath)
+//        let tmpHomeDirectoryRelativePath =
+////            IMFileManager.prepareHomeDirectoryRelativePath(parentDirectoryPath)
+//        homeDirectoryRelativePath = Path(parentPath: parentDirectoryPath, path: "")
+//        
+//        DBHomeDirectoryRelativePath = IMFileManager.prepareDBHomeDirectoryRelativePath(parentDirectoryPath, parentRelativePath: tmpHomeDirectoryRelativePath)
         
         super.init(parentDirectoryPath: parentDirectoryPath)
     }

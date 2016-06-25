@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		083203831D1C2D2F00904955 /* OC.m in Sources */ = {isa = PBXBuildFile; fileRef = 083203821D1C2D2F00904955 /* OC.m */; };
+		083203861D1C2D5500904955 /* NSData+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 083203851D1C2D5500904955 /* NSData+MD5.m */; };
 		6463D34E1D1ACFE80091C0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6463D34D1D1ACFE80091C0D3 /* AppDelegate.swift */; };
 		6463D3501D1ACFE80091C0D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6463D34F1D1ACFE80091C0D3 /* ViewController.swift */; };
 		6463D3531D1ACFE80091C0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6463D3511D1ACFE80091C0D3 /* Main.storyboard */; };
@@ -28,6 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		083203801D1C2D2F00904955 /* FileManager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FileManager-Bridging-Header.h"; sourceTree = "<group>"; };
+		083203811D1C2D2F00904955 /* OC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OC.h; sourceTree = "<group>"; };
+		083203821D1C2D2F00904955 /* OC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OC.m; sourceTree = "<group>"; };
+		083203841D1C2D5500904955 /* NSData+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5.h"; sourceTree = "<group>"; };
+		083203851D1C2D5500904955 /* NSData+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5.m"; sourceTree = "<group>"; };
 		6463D34A1D1ACFE80091C0D3 /* FileManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6463D34D1D1ACFE80091C0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6463D34F1D1ACFE80091C0D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +96,11 @@
 				6463D3591D1ACFE80091C0D3 /* Info.plist */,
 				64DF5C9B1D1BA70A0072F5D2 /* FileManager.swift */,
 				64DF5C9D1D1BB6D60072F5D2 /* IMFileManager.swift */,
+				083203811D1C2D2F00904955 /* OC.h */,
+				083203821D1C2D2F00904955 /* OC.m */,
+				083203801D1C2D2F00904955 /* FileManager-Bridging-Header.h */,
+				083203841D1C2D5500904955 /* NSData+MD5.h */,
+				083203851D1C2D5500904955 /* NSData+MD5.m */,
 			);
 			path = FileManager;
 			sourceTree = "<group>";
@@ -206,7 +218,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				64DF5C9C1D1BA70A0072F5D2 /* FileManager.swift in Sources */,
+				083203861D1C2D5500904955 /* NSData+MD5.m in Sources */,
 				6463D3501D1ACFE80091C0D3 /* ViewController.swift in Sources */,
+				083203831D1C2D2F00904955 /* OC.m in Sources */,
 				6463D34E1D1ACFE80091C0D3 /* AppDelegate.swift in Sources */,
 				64DF5C9E1D1BB6D60072F5D2 /* IMFileManager.swift in Sources */,
 			);
@@ -337,10 +351,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FileManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YM.FileManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FileManager/FileManager-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -348,10 +365,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FileManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YM.FileManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FileManager/FileManager-Bridging-Header.h";
 			};
 			name = Release;
 		};

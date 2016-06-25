@@ -19,6 +19,15 @@ class ViewController: UIViewController {
         
         print("\(NSHomeDirectory())")
         
+        
+        
+        let pathStr = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory,  NSSearchPathDomainMask.UserDomainMask, true).first!
+        let path = pathStr + "/a/b/c"
+        
+        tryCreateDirectoryAtPath(path)
+        
+        print(path)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,3 +38,12 @@ class ViewController: UIViewController {
     
 }
 
+
+func tryCreateDirectoryAtPath(path: String) {
+    do {
+        try NSFileManager.defaultManager().createDirectoryAtPath(path, withIntermediateDirectories: true, attributes: nil)
+    } catch let error {
+        //            log.error(error)
+        print(error)
+    }
+}
