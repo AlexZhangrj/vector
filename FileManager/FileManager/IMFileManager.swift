@@ -59,8 +59,7 @@ internal class IMFileManager: FileManager {
     override init(parentDirectoryPath: Path) {
         
         
-        
-//        let tmpHomeDirectoryRelativePath =
+ //        let tmpHomeDirectoryRelativePath =
 ////            IMFileManager.prepareHomeDirectoryRelativePath(parentDirectoryPath)
 //        homeDirectoryRelativePath = Path(parentPath: parentDirectoryPath, path: "")
 //        

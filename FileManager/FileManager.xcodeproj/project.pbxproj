@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		083203831D1C2D2F00904955 /* OC.m in Sources */ = {isa = PBXBuildFile; fileRef = 083203821D1C2D2F00904955 /* OC.m */; };
 		083203861D1C2D5500904955 /* NSData+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 083203851D1C2D5500904955 /* NSData+MD5.m */; };
+		08692A7D1D1EDB5100DC1775 /* TT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08692A7C1D1EDB5100DC1775 /* TT.swift */; };
 		6463D34E1D1ACFE80091C0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6463D34D1D1ACFE80091C0D3 /* AppDelegate.swift */; };
 		6463D3501D1ACFE80091C0D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6463D34F1D1ACFE80091C0D3 /* ViewController.swift */; };
 		6463D3531D1ACFE80091C0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6463D3511D1ACFE80091C0D3 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		083203821D1C2D2F00904955 /* OC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OC.m; sourceTree = "<group>"; };
 		083203841D1C2D5500904955 /* NSData+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5.h"; sourceTree = "<group>"; };
 		083203851D1C2D5500904955 /* NSData+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5.m"; sourceTree = "<group>"; };
+		08692A7C1D1EDB5100DC1775 /* TT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TT.swift; sourceTree = "<group>"; };
 		6463D34A1D1ACFE80091C0D3 /* FileManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6463D34D1D1ACFE80091C0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6463D34F1D1ACFE80091C0D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				083203801D1C2D2F00904955 /* FileManager-Bridging-Header.h */,
 				083203841D1C2D5500904955 /* NSData+MD5.h */,
 				083203851D1C2D5500904955 /* NSData+MD5.m */,
+				08692A7C1D1EDB5100DC1775 /* TT.swift */,
 			);
 			path = FileManager;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				083203831D1C2D2F00904955 /* OC.m in Sources */,
 				6463D34E1D1ACFE80091C0D3 /* AppDelegate.swift in Sources */,
 				64DF5C9E1D1BB6D60072F5D2 /* IMFileManager.swift in Sources */,
+				08692A7D1D1EDB5100DC1775 /* TT.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
