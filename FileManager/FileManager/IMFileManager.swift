@@ -10,8 +10,8 @@ import UIKit
 
 internal let DefaultIMFilePathManager: IMFileManager = {
     let pathStr = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory,  NSSearchPathDomainMask.UserDomainMask, true).first!
-    let path = Path(path: pathStr)
-    return IMFileManager(parentDirectoryPath: path)
+    let path = DirectoryPath(path: pathStr)
+    return IMFileManager(parentDirectoryPath: path!)
 }()
 
 /*
@@ -56,7 +56,7 @@ internal class IMFileManager: FileManager {
 //    internal let DBHomeDirectoryRelativePath: Path
 
     
-    override init(parentDirectoryPath: Path) {
+    override init(parentDirectoryPath: DirectoryPath) {
         
         
  //        let tmpHomeDirectoryRelativePath =
@@ -72,7 +72,7 @@ internal class IMFileManager: FileManager {
         var resultRelativePath = ""
         let dirName = "IMHomeDirectory"
         
-        resultRelativePath += FileManager.Separator
+        resultRelativePath += PathSeparator
         resultRelativePath += dirName
         
         let filePath = (parentDirectoryPath as NSString).stringByAppendingPathComponent(dirName)
@@ -92,7 +92,7 @@ internal class IMFileManager: FileManager {
         var resultRelativePath = ""
         let dirName = "IMDBDirectory"
         
-        resultRelativePath += FileManager.Separator
+        resultRelativePath += PathSeparator
         resultRelativePath += dirName
         
         var filePath = (parentDirectoryPath as NSString).stringByAppendingString(parentRelativePath)

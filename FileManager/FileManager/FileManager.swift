@@ -8,6 +8,8 @@
 
 import UIKit
 
+let DefaultFileManager = NSFileManager.defaultManager()
+
 /// 路径分割符
 public let PathSeparator: String = {
     var separator = "/"
