@@ -21,7 +21,7 @@ internal let DefaultIMFilePathManager: IMFileManager = {
  AudioFileDirectory: 5ca0f58db2a44050251b8e9698ce338f
  ImageFileDirectory: 516afaeac3564a2a0f29d462e0449e9a
  tmpImageFileDirectory: 565bdf2f9ee47dd44fc55cf6222abb18
- tmpAudioFileDirectory: f7a8884f9dc70ddf7864439f81afda97
+ TmpAudioFileDirectory: f7a8884f9dc70ddf7864439f81afda97
  ImageFileDirectory: 516afaeac3564a2a0f29d462e0449e9a
  */
 struct IMFilePath {
@@ -34,7 +34,7 @@ struct IMFilePath {
      /afc72c902548959114e2f42cce12a172/7bdc17bd01c7a6898ed3d19e030492f8  - DBDirectory  ＋
      /afc72c902548959114e2f42cce12a172/45b93e8e2e31668a939ffc55af2dc51b  - MediaDirectory message资源 －
      /afc72c902548959114e2f42cce12a172/45b93e8e2e31668a939ffc55af2dc51b/5ca0f58db2a44050251b8e9698ce338f  - AudioFileDirectory message音频文件 ＋
-     /afc72c902548959114e2f42cce12a172/45b93e8e2e31668a939ffc55af2dc51b/f7a8884f9dc70ddf7864439f81afda97  - tmpAudioFileDirectory 未发送成功的message音频文件 ＋
+     /afc72c902548959114e2f42cce12a172/45b93e8e2e31668a939ffc55af2dc51b/f7a8884f9dc70ddf7864439f81afda97  - TmpAudioFileDirectory 未发送成功的message音频文件 ＋
      
      /afc72c902548959114e2f42cce12a172/45b93e8e2e31668a939ffc55af2dc51b/516afaeac3564a2a0f29d462e0449e9a  - ImageFileDirectory message图片文件 ＋
      /afc72c902548959114e2f42cce12a172/45b93e8e2e31668a939ffc55af2dc51b/565bdf2f9ee47dd44fc55cf6222abb18  - tmpImageFileDirectory 未发送成功的message图片文件 ＋
@@ -43,6 +43,44 @@ struct IMFilePath {
     
     
 }
+
+private struct IMDirectoryName {
+    
+    #if DEBUG
+    static let IMHomeDirectory: String = "IMHomeDirectory"
+    static let DBDirectory: String = "DBDirectory"
+    static let MediaDirectory: String = "MediaDirectory"
+    static let AudioFileDirectory: String = "AudioFileDirectory"
+    static let TmpAudioFileDirectory: String = "TmpAudioFileDirectory"
+    static let ImageFileDirectory: String = "ImageFileDirectory"
+    static let TmpImageFileDirectory: String = "TmpImageFileDirectory"
+    
+    #else
+    static let IMHomeDirectory: String = "IMHomeDirectory".md5()
+    static let DBDirectory: String = "DBDirectory".md5()
+    static let MediaDirectory: String = "MediaDirectory".md5()
+    static let AudioFileDirectory: String = "AudioFileDirectory".md5()
+    static let TmpAudioFileDirectory: String = "TmpAudioFileDirectory".md5()
+    static let ImageFileDirectory: String = "ImageFileDirectory".md5()
+    static let TmpImageFileDirectory: String = "TmpImageFileDirectory".md5()
+    
+    #endif
+    
+    
+    static func HomeDirectory(uid: UInt64) -> String {
+        var str = "\(uid)"
+        #if DEBUG
+            str = "user_\(str)"
+        #else
+            str = str.md5()
+        #endif
+        return str
+    }
+    
+}
+
+
+
 
 internal class IMFileManager: FileManager {
     
@@ -54,64 +92,89 @@ internal class IMFileManager: FileManager {
     
 //    internal let homeDirectoryRelativePath: Path
 //    internal let DBHomeDirectoryRelativePath: Path
-
     
-    override init(parentDirectoryPath: DirectoryPath) {
+    var IMHomeDirectory: DirectoryPath {
+        get {
+            return parentDirectoryPath
+        }
+    }
+    let DBDirectory: DirectoryPath
+    private let MediaDirectory: DirectoryPath
+    let AudioFileDirectory: DirectoryPath
+    let TmpAudioFileDirectory: DirectoryPath
+    let ImageFileDirectory: DirectoryPath
+    let TmpImageFileDirectory: DirectoryPath
+    
+    required override init(parentDirectoryPath: DirectoryPath) {
         
-        
- //        let tmpHomeDirectoryRelativePath =
-////            IMFileManager.prepareHomeDirectoryRelativePath(parentDirectoryPath)
-//        homeDirectoryRelativePath = Path(parentPath: parentDirectoryPath, path: "")
-//        
-//        DBHomeDirectoryRelativePath = IMFileManager.prepareDBHomeDirectoryRelativePath(parentDirectoryPath, parentRelativePath: tmpHomeDirectoryRelativePath)
+        DBDirectory = DirectoryPath(parentPath: parentDirectoryPath, path: IMDirectoryName.DBDirectory)
+        MediaDirectory = DirectoryPath(parentPath: parentDirectoryPath, path: IMDirectoryName.MediaDirectory)
+        AudioFileDirectory = DirectoryPath(parentPath: MediaDirectory, path: IMDirectoryName.AudioFileDirectory)
+        TmpAudioFileDirectory = DirectoryPath(parentPath: MediaDirectory, path: IMDirectoryName.TmpAudioFileDirectory)
+        ImageFileDirectory = DirectoryPath(parentPath: MediaDirectory, path: IMDirectoryName.ImageFileDirectory)
+        TmpImageFileDirectory = DirectoryPath(parentPath: MediaDirectory, path: IMDirectoryName.TmpImageFileDirectory)
         
         super.init(parentDirectoryPath: parentDirectoryPath)
+        prepareAllDirectory()
+    }
+
+    convenience init(uid: UInt64) {
+        var homePathStr = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.LibraryDirectory,  NSSearchPathDomainMask.UserDomainMask, true).first!
+        homePathStr += PathSeparator
+        homePathStr += IMDirectoryName.IMHomeDirectory
+        homePathStr += PathSeparator
+        homePathStr += IMDirectoryName.HomeDirectory(uid)
+        let parentDirectoryPath = DirectoryPath(path: homePathStr)
+        
+        self.init(parentDirectoryPath: parentDirectoryPath!)
     }
     
-    private static func prepareHomeDirectoryRelativePath(parentDirectoryPath: String) -> String {
-        var resultRelativePath = ""
-        let dirName = "IMHomeDirectory"
-        
-        resultRelativePath += PathSeparator
-        resultRelativePath += dirName
-        
-        let filePath = (parentDirectoryPath as NSString).stringByAppendingPathComponent(dirName)
+    private func prepareDirectory(path: String) {
+        let filePath = path
         var isDir: ObjCBool = false
         if (NSFileManager.defaultManager().fileExistsAtPath(filePath, isDirectory: &isDir)) {
             if isDir.boolValue == false {
-                tryRemoveItemAtPath(filePath)
-                tryCreateDirectoryAtPath(filePath)
+                FileManager.tryRemoveItemAtPath(filePath)
+                FileManager.tryCreateDirectoryAtPath(filePath)
             }
         }else {
-            tryCreateDirectoryAtPath(filePath)
+            FileManager.tryCreateDirectoryAtPath(filePath)
         }
-        return resultRelativePath;
     }
-    
-    private static func prepareDBHomeDirectoryRelativePath(parentDirectoryPath: String, parentRelativePath: String) -> String {
-        var resultRelativePath = ""
-        let dirName = "IMDBDirectory"
+    private func prepareAllDirectory() {
+        let parentDirectoryPathStr = parentDirectoryPath.absolutePath()
+        prepareDirectory(parentDirectoryPathStr)
+        print(parentDirectoryPathStr)
         
-        resultRelativePath += PathSeparator
-        resultRelativePath += dirName
-        
-        var filePath = (parentDirectoryPath as NSString).stringByAppendingString(parentRelativePath)
-        filePath = (filePath as NSString).stringByAppendingPathComponent(dirName)
-        var isDir: ObjCBool = false
-        if (NSFileManager.defaultManager().fileExistsAtPath(filePath, isDirectory: &isDir)) {
-            if isDir.boolValue == false {
-                tryRemoveItemAtPath(filePath)
-                tryCreateDirectoryAtPath(filePath)
-            }
-        }else {
-            tryCreateDirectoryAtPath(filePath)
-        }
-        return filePath;
+        let DBDirectoryPath = DBDirectory.absolutePath()
+        prepareDirectory(DBDirectoryPath)
+        print(DBDirectoryPath)
+
+        let MediaDirectoryPath = MediaDirectory.absolutePath()
+        prepareDirectory(MediaDirectoryPath)
+        print(MediaDirectoryPath)
+
+        let AudioFileDirectoryPath = AudioFileDirectory.absolutePath()
+        prepareDirectory(AudioFileDirectoryPath)
+        print(AudioFileDirectoryPath)
+
+        let TmpAudioFileDirectoryPath = TmpAudioFileDirectory.absolutePath()
+        prepareDirectory(TmpAudioFileDirectoryPath)
+        print(TmpAudioFileDirectoryPath)
+
+        let ImageFileDirectoryPath = ImageFileDirectory.absolutePath()
+        prepareDirectory(ImageFileDirectoryPath)
+        print(ImageFileDirectoryPath)
+
+        let TmpImageFileDirectoryPath = TmpImageFileDirectory.absolutePath()
+        prepareDirectory(TmpImageFileDirectoryPath)
+        print(TmpImageFileDirectoryPath)
+
     }
-    
-    
-    
-    
-    
-    
+
 }
+
+
+
+
+

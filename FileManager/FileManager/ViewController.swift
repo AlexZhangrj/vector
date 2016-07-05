@@ -22,12 +22,14 @@ class ViewController: UIViewController {
         
         
         let pathStr = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory,  NSSearchPathDomainMask.UserDomainMask, true).first!
-        let path = pathStr + "/a/b/c"
-        
-        tryCreateDirectoryAtPath(path)
-        
-        print(path)
-        
+//        let path = pathStr + "/a/b/c"
+//        
+//        tryCreateDirectoryAtPath(path)
+        let rootPath = DirectoryPath(path: pathStr)!
+//        let fm = IMFileManager(parentDirectoryPath: rootPath)
+        let fm = IMFileManager(uid: UInt64(88454))
+
+        print(pathStr)
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,3 +49,11 @@ func tryCreateDirectoryAtPath(path: String) {
         print(error)
     }
 }
+
+
+
+
+
+
+
+

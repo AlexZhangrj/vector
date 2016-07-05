@@ -10,12 +10,14 @@
 		083203831D1C2D2F00904955 /* OC.m in Sources */ = {isa = PBXBuildFile; fileRef = 083203821D1C2D2F00904955 /* OC.m */; };
 		083203861D1C2D5500904955 /* NSData+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 083203851D1C2D5500904955 /* NSData+MD5.m */; };
 		08692A7D1D1EDB5100DC1775 /* TT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08692A7C1D1EDB5100DC1775 /* TT.swift */; };
+		6406EC781D2BB4FD008BC1D3 /* String+md5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406EC771D2BB4FD008BC1D3 /* String+md5.swift */; };
 		6463D34E1D1ACFE80091C0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6463D34D1D1ACFE80091C0D3 /* AppDelegate.swift */; };
 		6463D3501D1ACFE80091C0D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6463D34F1D1ACFE80091C0D3 /* ViewController.swift */; };
 		6463D3531D1ACFE80091C0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6463D3511D1ACFE80091C0D3 /* Main.storyboard */; };
 		6463D3551D1ACFE80091C0D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6463D3541D1ACFE80091C0D3 /* Assets.xcassets */; };
 		6463D3581D1ACFE80091C0D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6463D3561D1ACFE80091C0D3 /* LaunchScreen.storyboard */; };
 		6463D3631D1ACFE80091C0D3 /* FileManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6463D3621D1ACFE80091C0D3 /* FileManagerUITests.swift */; };
+		64B73C771D23E5AA0004AB5D /* String+FileExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B73C761D23E5AA0004AB5D /* String+FileExtension.swift */; };
 		64DF5C9C1D1BA70A0072F5D2 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DF5C9B1D1BA70A0072F5D2 /* FileManager.swift */; };
 		64DF5C9E1D1BB6D60072F5D2 /* IMFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DF5C9D1D1BB6D60072F5D2 /* IMFileManager.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +39,7 @@
 		083203841D1C2D5500904955 /* NSData+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5.h"; sourceTree = "<group>"; };
 		083203851D1C2D5500904955 /* NSData+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5.m"; sourceTree = "<group>"; };
 		08692A7C1D1EDB5100DC1775 /* TT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TT.swift; sourceTree = "<group>"; };
+		6406EC771D2BB4FD008BC1D3 /* String+md5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+md5.swift"; sourceTree = "<group>"; };
 		6463D34A1D1ACFE80091C0D3 /* FileManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6463D34D1D1ACFE80091C0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6463D34F1D1ACFE80091C0D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		6463D35E1D1ACFE80091C0D3 /* FileManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6463D3621D1ACFE80091C0D3 /* FileManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerUITests.swift; sourceTree = "<group>"; };
 		6463D3641D1ACFE80091C0D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64B73C761D23E5AA0004AB5D /* String+FileExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+FileExtension.swift"; sourceTree = "<group>"; };
 		64DF5C9B1D1BA70A0072F5D2 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		64DF5C9D1D1BB6D60072F5D2 /* IMFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +108,8 @@
 				083203841D1C2D5500904955 /* NSData+MD5.h */,
 				083203851D1C2D5500904955 /* NSData+MD5.m */,
 				08692A7C1D1EDB5100DC1775 /* TT.swift */,
+				64B73C761D23E5AA0004AB5D /* String+FileExtension.swift */,
+				6406EC771D2BB4FD008BC1D3 /* String+md5.swift */,
 			);
 			path = FileManager;
 			sourceTree = "<group>";
@@ -224,6 +230,8 @@
 				083203861D1C2D5500904955 /* NSData+MD5.m in Sources */,
 				6463D3501D1ACFE80091C0D3 /* ViewController.swift in Sources */,
 				083203831D1C2D2F00904955 /* OC.m in Sources */,
+				64B73C771D23E5AA0004AB5D /* String+FileExtension.swift in Sources */,
+				6406EC781D2BB4FD008BC1D3 /* String+md5.swift in Sources */,
 				6463D34E1D1ACFE80091C0D3 /* AppDelegate.swift in Sources */,
 				64DF5C9E1D1BB6D60072F5D2 /* IMFileManager.swift in Sources */,
 				08692A7D1D1EDB5100DC1775 /* TT.swift in Sources */,
@@ -358,6 +366,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FileManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = YM.FileManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FileManager/FileManager-Bridging-Header.h";
@@ -410,7 +419,7 @@
 				6463D3661D1ACFE80091C0D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		6463D3671D1ACFE80091C0D3 /* Build configuration list for PBXNativeTarget "FileManager" */ = {
 			isa = XCConfigurationList;
@@ -419,7 +428,7 @@
 				6463D3691D1ACFE80091C0D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		6463D36A1D1ACFE80091C0D3 /* Build configuration list for PBXNativeTarget "FileManagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -428,7 +437,7 @@
 				6463D36C1D1ACFE80091C0D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
