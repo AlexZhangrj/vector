@@ -1,0 +1,7 @@
+syntax = "proto2";
+message Header 
+{
+    required int32 id = 1;
+    required int32 name = 2;
+    required int32 email = 3;
+}
