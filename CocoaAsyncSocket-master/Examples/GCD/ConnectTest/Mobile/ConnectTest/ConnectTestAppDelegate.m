@@ -7,15 +7,15 @@
 // Log levels: off, error, warn, info, verbose
 static const int ddLogLevel = LOG_LEVEL_INFO;
 
-#define USE_SECURE_CONNECTION 1
+#define USE_SECURE_CONNECTION 0
 #define ENABLE_BACKGROUNDING  0
 
 #if USE_SECURE_CONNECTION
-  #define HOST @"www.paypal.com"
-  #define PORT 443
+  #define HOST @"192.168.0.103"
+  #define PORT 6666
 #else
-  #define HOST @"google.com"
-  #define PORT 80
+  #define HOST @"192.168.0.103"
+  #define PORT 6666
 #endif
 
 @implementation ConnectTestAppDelegate
@@ -39,6 +39,8 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    
 	DDLogInfo(@"%@", THIS_METHOD);
 	
 	// Setup our socket (GCDAsyncSocket).
@@ -66,7 +68,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 		self.viewController.label.text = @"Connecting...";
 		
 		NSError *error = nil;
-		if (![asyncSocket connectToHost:@"www.paypal.com" onPort:port error:&error])
+		if (![asyncSocket connectToHost:HOST onPort:port error:&error])
 		{
 			DDLogError(@"Error connecting: %@", error);
 			self.viewController.label.text = @"Oops";
@@ -99,7 +101,8 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 	#endif
 	
 	// Add the view controller's view to the window and display.
-	[self.window addSubview:self.viewController.view];
+//	[self.window addSubview:self.viewController.view];
+    self.window.rootViewController = self.viewController;
 	[self.window makeKeyAndVisible];
 	
 	return YES;

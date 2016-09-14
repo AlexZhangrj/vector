@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		642C56E41C318AAE00A9C8FA /* QLDIP_C_DIP.c in Sources */ = {isa = PBXBuildFile; fileRef = 642C56E21C318AAE00A9C8FA /* QLDIP_C_DIP.c */; };
+		642C56E71C31903400A9C8FA /* QLDIP_C_Error.c in Sources */ = {isa = PBXBuildFile; fileRef = 642C56E51C31903400A9C8FA /* QLDIP_C_Error.c */; };
+		B82B11921C239A1200F6F888 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B82B11911C239A1200F6F888 /* main.c */; };
+		B82B119B1C239A4200F6F888 /* QLDIP_C_Type.c in Sources */ = {isa = PBXBuildFile; fileRef = B82B11991C239A4200F6F888 /* QLDIP_C_Type.c */; };
+		B8406C591C3116BA0087D864 /* QLDIP_C_Data.c in Sources */ = {isa = PBXBuildFile; fileRef = B8406C571C3116BA0087D864 /* QLDIP_C_Data.c */; };
+		B86A47861C2908980020D761 /* QLDIP_C_Base.c in Sources */ = {isa = PBXBuildFile; fileRef = B86A47841C2908980020D761 /* QLDIP_C_Base.c */; };
+		B86A47931C29356A0020D761 /* QLDIP_C_Number.c in Sources */ = {isa = PBXBuildFile; fileRef = B86A47911C29356A0020D761 /* QLDIP_C_Number.c */; };
+		B86A47961C2935740020D761 /* QLDIP_C_String.c in Sources */ = {isa = PBXBuildFile; fileRef = B86A47941C2935740020D761 /* QLDIP_C_String.c */; };
+		B86A47991C2935810020D761 /* QLDIP_C_Array.c in Sources */ = {isa = PBXBuildFile; fileRef = B86A47971C2935810020D761 /* QLDIP_C_Array.c */; };
+		B86A479C1C29358B0020D761 /* QLDIP_C_Map.c in Sources */ = {isa = PBXBuildFile; fileRef = B86A479A1C29358B0020D761 /* QLDIP_C_Map.c */; };
+		F1C039661C3691D900CDB509 /* QLDIP_C_DIPSerialization.c in Sources */ = {isa = PBXBuildFile; fileRef = F1C039641C3691D900CDB509 /* QLDIP_C_DIPSerialization.c */; };
+		F1C039691C393C3600CDB509 /* QLDIP_C_Null.c in Sources */ = {isa = PBXBuildFile; fileRef = F1C039671C393C3600CDB509 /* QLDIP_C_Null.c */; };
+		F1C0396D1C39403800CDB509 /* QLDIP_C_DIPSerializationTest.c in Sources */ = {isa = PBXBuildFile; fileRef = F1C0396B1C39403800CDB509 /* QLDIP_C_DIPSerializationTest.c */; };
+		F1C039701C394A1B00CDB509 /* QLDIP_C_DIPSerializationObjRange.c in Sources */ = {isa = PBXBuildFile; fileRef = F1C0396E1C394A1B00CDB509 /* QLDIP_C_DIPSerializationObjRange.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B82B118C1C239A1200F6F888 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		642C56E21C318AAE00A9C8FA /* QLDIP_C_DIP.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QLDIP_C_DIP.c; sourceTree = "<group>"; };
+		642C56E31C318AAE00A9C8FA /* QLDIP_C_DIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLDIP_C_DIP.h; sourceTree = "<group>"; };
+		642C56E51C31903400A9C8FA /* QLDIP_C_Error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QLDIP_C_Error.c; sourceTree = "<group>"; };
+		642C56E61C31903400A9C8FA /* QLDIP_C_Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLDIP_C_Error.h; sourceTree = "<group>"; };
+		64A487811C2AD4C00072A7C0 /* QLDIP_C_headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLDIP_C_headers.h; sourceTree = "<group>"; };
+		B82B118E1C239A1200F6F888 /* QLDIPWithC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = QLDIPWithC; sourceTree = BUILT_PRODUCTS_DIR; };
+		B82B11911C239A1200F6F888 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		B82B11991C239A4200F6F888 /* QLDIP_C_Type.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QLDIP_C_Type.c; sourceTree = "<group>"; };
+		B82B119A1C239A4200F6F888 /* QLDIP_C_Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLDIP_C_Type.h; sourceTree = "<group>"; };
+		B8406C571C3116BA0087D864 /* QLDIP_C_Data.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QLDIP_C_Data.c; sourceTree = "<group>"; };
+		B8406C581C3116BA0087D864 /* QLDIP_C_Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLDIP_C_Data.h; sourceTree = "<group>"; };
+		B86A47841C2908980020D761 /* QLDIP_C_Base.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QLDIP_C_Base.c; sourceTree = "<group>"; };
+		B86A47851C2908980020D761 /* QLDIP_C_Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLDIP_C_Base.h; sourceTree = "<group>"; };
+		B86A47911C29356A0020D761 /* QLDIP_C_Number.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QLDIP_C_Number.c; sourceTree = "<group>"; };
+		B86A47921C29356A0020D761 /* QLDIP_C_Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLDIP_C_Number.h; sourceTree = "<group>"; };
+		B86A47941C2935740020D761 /* QLDIP_C_String.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QLDIP_C_String.c; sourceTree = "<group>"; };
+		B86A47951C2935740020D761 /* QLDIP_C_String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLDIP_C_String.h; sourceTree = "<group>"; };
+		B86A47971C2935810020D761 /* QLDIP_C_Array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QLDIP_C_Array.c; sourceTree = "<group>"; };
+		B86A47981C2935810020D761 /* QLDIP_C_Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLDIP_C_Array.h; sourceTree = "<group>"; };
+		B86A479A1C29358B0020D761 /* QLDIP_C_Map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QLDIP_C_Map.c; sourceTree = "<group>"; };
+		B86A479B1C29358B0020D761 /* QLDIP_C_Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLDIP_C_Map.h; sourceTree = "<group>"; };
+		F1C039641C3691D900CDB509 /* QLDIP_C_DIPSerialization.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QLDIP_C_DIPSerialization.c; sourceTree = "<group>"; };
+		F1C039651C3691D900CDB509 /* QLDIP_C_DIPSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLDIP_C_DIPSerialization.h; sourceTree = "<group>"; };
+		F1C039671C393C3600CDB509 /* QLDIP_C_Null.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QLDIP_C_Null.c; sourceTree = "<group>"; };
+		F1C039681C393C3600CDB509 /* QLDIP_C_Null.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLDIP_C_Null.h; sourceTree = "<group>"; };
+		F1C0396B1C39403800CDB509 /* QLDIP_C_DIPSerializationTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QLDIP_C_DIPSerializationTest.c; sourceTree = "<group>"; };
+		F1C0396C1C39403800CDB509 /* QLDIP_C_DIPSerializationTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLDIP_C_DIPSerializationTest.h; sourceTree = "<group>"; };
+		F1C0396E1C394A1B00CDB509 /* QLDIP_C_DIPSerializationObjRange.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QLDIP_C_DIPSerializationObjRange.c; sourceTree = "<group>"; };
+		F1C0396F1C394A1B00CDB509 /* QLDIP_C_DIPSerializationObjRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLDIP_C_DIPSerializationObjRange.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B82B118B1C239A1200F6F888 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B82B11851C239A1200F6F888 = {
+			isa = PBXGroup;
+			children = (
+				F1C0396A1C39402E00CDB509 /* Test */,
+				B82B11981C239A2F00F6F888 /* SRC */,
+				B82B11901C239A1200F6F888 /* QLDIPWithC */,
+				B82B118F1C239A1200F6F888 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B82B118F1C239A1200F6F888 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B82B118E1C239A1200F6F888 /* QLDIPWithC */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B82B11901C239A1200F6F888 /* QLDIPWithC */ = {
+			isa = PBXGroup;
+			children = (
+				B82B11911C239A1200F6F888 /* main.c */,
+			);
+			path = QLDIPWithC;
+			sourceTree = "<group>";
+		};
+		B82B11981C239A2F00F6F888 /* SRC */ = {
+			isa = PBXGroup;
+			children = (
+				B82B11991C239A4200F6F888 /* QLDIP_C_Type.c */,
+				B82B119A1C239A4200F6F888 /* QLDIP_C_Type.h */,
+				B86A47841C2908980020D761 /* QLDIP_C_Base.c */,
+				B86A47851C2908980020D761 /* QLDIP_C_Base.h */,
+				B86A47911C29356A0020D761 /* QLDIP_C_Number.c */,
+				B86A47921C29356A0020D761 /* QLDIP_C_Number.h */,
+				B86A47941C2935740020D761 /* QLDIP_C_String.c */,
+				B86A47951C2935740020D761 /* QLDIP_C_String.h */,
+				B86A47971C2935810020D761 /* QLDIP_C_Array.c */,
+				B86A47981C2935810020D761 /* QLDIP_C_Array.h */,
+				B86A479A1C29358B0020D761 /* QLDIP_C_Map.c */,
+				B86A479B1C29358B0020D761 /* QLDIP_C_Map.h */,
+				64A487811C2AD4C00072A7C0 /* QLDIP_C_headers.h */,
+				B8406C571C3116BA0087D864 /* QLDIP_C_Data.c */,
+				B8406C581C3116BA0087D864 /* QLDIP_C_Data.h */,
+				642C56E51C31903400A9C8FA /* QLDIP_C_Error.c */,
+				642C56E61C31903400A9C8FA /* QLDIP_C_Error.h */,
+				F1C039671C393C3600CDB509 /* QLDIP_C_Null.c */,
+				F1C039681C393C3600CDB509 /* QLDIP_C_Null.h */,
+				642C56E21C318AAE00A9C8FA /* QLDIP_C_DIP.c */,
+				642C56E31C318AAE00A9C8FA /* QLDIP_C_DIP.h */,
+				F1C039641C3691D900CDB509 /* QLDIP_C_DIPSerialization.c */,
+				F1C039651C3691D900CDB509 /* QLDIP_C_DIPSerialization.h */,
+				F1C0396E1C394A1B00CDB509 /* QLDIP_C_DIPSerializationObjRange.c */,
+				F1C0396F1C394A1B00CDB509 /* QLDIP_C_DIPSerializationObjRange.h */,
+			);
+			path = SRC;
+			sourceTree = "<group>";
+		};
+		F1C0396A1C39402E00CDB509 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				F1C0396B1C39403800CDB509 /* QLDIP_C_DIPSerializationTest.c */,
+				F1C0396C1C39403800CDB509 /* QLDIP_C_DIPSerializationTest.h */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B82B118D1C239A1200F6F888 /* QLDIPWithC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B82B11951C239A1200F6F888 /* Build configuration list for PBXNativeTarget "QLDIPWithC" */;
+			buildPhases = (
+				B82B118A1C239A1200F6F888 /* Sources */,
+				B82B118B1C239A1200F6F888 /* Frameworks */,
+				B82B118C1C239A1200F6F888 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QLDIPWithC;
+			productName = QLDIPWithC;
+			productReference = B82B118E1C239A1200F6F888 /* QLDIPWithC */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B82B11861C239A1200F6F888 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = ql;
+				TargetAttributes = {
+					B82B118D1C239A1200F6F888 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = B82B11891C239A1200F6F888 /* Build configuration list for PBXProject "QLDIPWithC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B82B11851C239A1200F6F888;
+			productRefGroup = B82B118F1C239A1200F6F888 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B82B118D1C239A1200F6F888 /* QLDIPWithC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B82B118A1C239A1200F6F888 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1C039661C3691D900CDB509 /* QLDIP_C_DIPSerialization.c in Sources */,
+				B86A47991C2935810020D761 /* QLDIP_C_Array.c in Sources */,
+				642C56E41C318AAE00A9C8FA /* QLDIP_C_DIP.c in Sources */,
+				B86A47961C2935740020D761 /* QLDIP_C_String.c in Sources */,
+				B86A47861C2908980020D761 /* QLDIP_C_Base.c in Sources */,
+				F1C039691C393C3600CDB509 /* QLDIP_C_Null.c in Sources */,
+				B86A47931C29356A0020D761 /* QLDIP_C_Number.c in Sources */,
+				B8406C591C3116BA0087D864 /* QLDIP_C_Data.c in Sources */,
+				B82B119B1C239A4200F6F888 /* QLDIP_C_Type.c in Sources */,
+				F1C039701C394A1B00CDB509 /* QLDIP_C_DIPSerializationObjRange.c in Sources */,
+				F1C0396D1C39403800CDB509 /* QLDIP_C_DIPSerializationTest.c in Sources */,
+				B82B11921C239A1200F6F888 /* main.c in Sources */,
+				B86A479C1C29358B0020D761 /* QLDIP_C_Map.c in Sources */,
+				642C56E71C31903400A9C8FA /* QLDIP_C_Error.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B82B11931C239A1200F6F888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B82B11941C239A1200F6F888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B82B11961C239A1200F6F888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B82B11971C239A1200F6F888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B82B11891C239A1200F6F888 /* Build configuration list for PBXProject "QLDIPWithC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B82B11931C239A1200F6F888 /* Debug */,
+				B82B11941C239A1200F6F888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B82B11951C239A1200F6F888 /* Build configuration list for PBXNativeTarget "QLDIPWithC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B82B11961C239A1200F6F888 /* Debug */,
+				B82B11971C239A1200F6F888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B82B11861C239A1200F6F888 /* Project object */;
+}
