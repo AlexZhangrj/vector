@@ -8042,9 +8042,10 @@ static void CFWriteStreamCallback (CFWriteStreamRef stream, CFStreamEventType ty
 		hints.ai_family   = PF_UNSPEC;
 		hints.ai_socktype = SOCK_STREAM;
 		hints.ai_protocol = IPPROTO_TCP;
-		
+        NSLog(@"------");
 		int gai_error = getaddrinfo([host UTF8String], [portStr UTF8String], &hints, &res0);
-		
+        NSLog(@"------");
+
 		if (gai_error)
 		{
 			error = [self gaiError:gai_error];

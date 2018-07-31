@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>EvKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>ServiceConnectKit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -28,6 +33,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>771643051D855A380013C183</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>772D402A1D9174DD005B8E33</key>
 		<dict>
 			<key>primary</key>
 			<true/>

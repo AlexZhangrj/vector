@@ -440,9 +440,7 @@ public struct RSACrypt {
             return Data(base64Encoded: resultStr, options: Data.Base64DecodingOptions.ignoreUnknownCharacters)
         }else {
             return nil
-        }
-        return Data()
-        
+        }        
     }
     
 //    static func _decrypt(data: Data,  publicKey: String, privateKey: String) {
